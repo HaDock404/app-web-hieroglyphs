@@ -1,5 +1,42 @@
 header {
     width: 100%;
-    height: 100px;
-    background-color: red;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+}
+
+#part1 {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#part1_el1 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #036635;
+    border-radius: 7px;
+}
+
+#part1_el2 {
+    width: 175px;
+    height: 50px;
+    background-color: #036635;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
 }
