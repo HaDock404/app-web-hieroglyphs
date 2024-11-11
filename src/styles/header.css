@@ -5,9 +5,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 0px;
 }
 
 #part1 {
@@ -17,6 +14,27 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+    margin-left: 30px;
+}
+
+#part2 {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 50px;
+    border: solid 1px #036635;
+    border-radius: 7px;
+    color: #036635;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 #part1_el1 {
@@ -28,6 +46,7 @@ header {
     align-items: center;
     border: solid 1px #036635;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 #part1_el2 {
@@ -39,4 +58,5 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 7px;
+    cursor: pointer;
 }

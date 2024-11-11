@@ -14,6 +14,7 @@ function Header() {
                     <Icon2 />
                 </div>
             </div>
+            <div id='part2'>About us</div>
         </header>
     )
 }
