@@ -7,13 +7,13 @@ import {
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
-import App from './pages/App';
+import Home from './pages/Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
         <Routes>
-          <Route path="/" element={<App />}/>
+          <Route path="/" element={<Home />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
