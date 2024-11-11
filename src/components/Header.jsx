@@ -1,7 +1,11 @@
 import '../styles/header.css'
 
 function Header() {
-    return
+    return (
+        <header id='header'>
+
+        </header>
+    )
 }
 
 export default Header

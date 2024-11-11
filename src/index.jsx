@@ -7,11 +7,15 @@ import {
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
+import './styles/normalize.css'
+import GlobalStyle from './styles/createGlobalStyle.jsx'
+
 import Home from './pages/Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
+    <GlobalStyle/>
         <Routes>
           <Route path="/" element={<Home />}/>
         </Routes>
