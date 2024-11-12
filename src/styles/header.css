@@ -10,7 +10,7 @@ header {
 
 #part1 {
     width: 240px;
-    height: 50px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,7 @@ header {
 
 #part2 {
     width: 120px;
-    height: 50px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,8 +40,8 @@ header {
 }
 
 #part1_el1 {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -53,8 +53,9 @@ header {
 
 #part1_el2 {
     width: 175px;
-    height: 50px;
+    height: 45px;
     background-color: #036635;
+    border: solid 1px #036635;
     display: flex;
     flex-direction: row;
     justify-content: center;
