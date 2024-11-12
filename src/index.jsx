@@ -10,14 +10,14 @@ import reportWebVitals from './reportWebVitals';
 import './styles/normalize.css'
 import GlobalStyle from './styles/createGlobalStyle.jsx'
 
-import Home from './pages/Homepage';
+import Homepage from './pages/Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
     <GlobalStyle/>
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Homepage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
