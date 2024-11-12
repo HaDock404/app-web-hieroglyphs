@@ -1,4 +1,5 @@
 import '../styles/header.css'
+import { Link } from 'react-router-dom'
 
 import Icon1 from '../components/Icon1'
 import Icon2 from '../components/Icon2'
@@ -7,14 +8,14 @@ function Header() {
     return (
         <header id='header'>
             <div id='part1'>
-                <div id='part1_el1'>
+                <Link to="/" id='part1_el1'>
                     <Icon1 />
-                </div>
-                <div id='part1_el2'>
+                </Link>
+                <Link to="/" id='part1_el2'>
                     <Icon2 />
-                </div>
+                </Link>
             </div>
-            <div id='part2'>About us</div>
+            <Link to="/" id='part2'>About us</Link>
         </header>
     )
 }
