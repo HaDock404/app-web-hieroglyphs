@@ -9,6 +9,9 @@ function IntroSearch() {
                     <div id='intro_search_part1A_el2'>Easy to use, easy to customize, make your life easier.</div>
                 </div>
                 <div id='intro_search_part1B'>
+                    <div id='intro_search_part1B_el1'></div>
+                    <div id='intro_search_part1B_el2'></div>
+                    <div id='intro_search_part1B_el3'></div>
 
                 </div>
 
