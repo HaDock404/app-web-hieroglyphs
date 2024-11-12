@@ -61,3 +61,20 @@ header {
     border-radius: 7px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+    #header {
+        min-width: 200px;
+    }
+    #part1 {
+        width: 100px;
+    }
+    #part1_el2 {
+        display: none;
+    }
+    #part2 {
+        background-color: #036635;
+        color: #ffffff;
+        font-weight: 500;
+    }
+}

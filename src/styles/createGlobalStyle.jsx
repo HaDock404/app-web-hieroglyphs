@@ -12,7 +12,7 @@ const StyledGlobalStyle = createGlobalStyle`
     #main-container {
         width: 100%;
         max-width: 1500px;
-        min-width: 500px; /* Force a minimum width */
+       
         margin: 0 auto; /* Center the container horizontally */
         display: flex;
         flex-direction: column;
