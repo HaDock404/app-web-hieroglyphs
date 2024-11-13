@@ -1,6 +1,7 @@
 #intro_search {
     width: calc(100% - 80px);
     height: calc(330px - 80px);
+    background-color: white;
     padding-left: 30px;
     padding-right: 50px;
     padding-top: 100px;
