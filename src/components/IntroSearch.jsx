@@ -6,15 +6,19 @@ import Icon3 from './Icon3.jsx';
 function IntroSearch() {
     const introSearchRef = useRef(null);
     const [isFixed, setIsFixed] = useState(false);
+    const [isDisplayed, setIsDisplayed] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             if (introSearchRef.current) {
                 if (window.scrollY >= 200) {
+                    setIsDisplayed(true)
                     setIsFixed(true);
                 } else if (window.scrollY < 200) {
+                    setIsDisplayed(false)
                     setIsFixed(false);
                 }
+                
             }
         };
 
@@ -49,7 +53,7 @@ function IntroSearch() {
                     ref={introSearchRef}
                     style={{
                         position: isFixed ? 'fixed' : 'relative',
-                        top: isFixed ? '90px' : 'auto',
+                        top: isFixed ? '88px' : 'auto',
                         width: '570px',
                         zIndex: 5,
                     }}
@@ -65,7 +69,14 @@ function IntroSearch() {
                 </div>
             </article>
 
-            <article id="intro_search_part2"></article>
+            <article 
+                id="intro_search_part2"
+                style={{
+                    display : isDisplayed ? "none" : "block"
+                }}
+            >
+
+                </article>
         </section>
     );
 }
