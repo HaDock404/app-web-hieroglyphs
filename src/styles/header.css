@@ -6,6 +6,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
 }
 
 #part1 {
