@@ -1,5 +1,6 @@
 #main {
     width: 100%;
-    height: 300px;
-    background-color: green;
+    height: 1000px;
+    background-color: #036635;
+    z-index: 1;
 }
