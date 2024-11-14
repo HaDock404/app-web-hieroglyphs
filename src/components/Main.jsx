@@ -4,14 +4,28 @@ import '../styles/main.css'
 function Main() {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
+    const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallMain(window.innerWidth < 739);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
+            const scrollThreshold = window.innerWidth > 739 ? 200 : 560;
+
             if (mainRef.current) {
 
-                if (window.scrollY >= 200) {
+                if (window.scrollY >= scrollThreshold) {
                     setIsUp(true);
-                } else if (window.scrollY < 200) {
+                } else if (window.scrollY < scrollThreshold) {
                     setIsUp(false);
                 }
             }
@@ -21,14 +35,14 @@ function Main() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isSmallMain]);
 
     return (
         <section 
             id="main"
             ref={mainRef}
             style={{
-                marginTop: isUp ? '380px' : '0px'
+                marginTop: isUp ? (isSmallMain ? '740px' : '380px') : '0px'
         }}
         >
             hello

@@ -1,24 +1,36 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/intro_search.css';
-
 import Icon3 from './Icon3.jsx';
 
 function IntroSearch() {
     const introSearchRef = useRef(null);
     const [isFixed, setIsFixed] = useState(false);
     const [isDisplayed, setIsDisplayed] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 739);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 739);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
+            const scrollThreshold = window.innerWidth > 739 ? 200 : 560;
+
             if (introSearchRef.current) {
-                if (window.scrollY >= 200) {
-                    setIsDisplayed(true)
+                if (window.scrollY >= scrollThreshold) {
+                    setIsDisplayed(true);
                     setIsFixed(true);
-                } else if (window.scrollY < 200) {
-                    setIsDisplayed(false)
+                } else if (window.scrollY < scrollThreshold){
+                    setIsDisplayed(false);
                     setIsFixed(false);
                 }
-                
             }
         };
 
@@ -26,17 +38,17 @@ function IntroSearch() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isSmallScreen]);
 
     return (
-        <section id="intro_search"
-        ref={introSearchRef}
-        style={{
-            position: isFixed ? 'fixed' : 'relative',
-            top: isFixed ? '-200px' : 'auto',
-
-            zIndex: 5,
-        }}
+        <section
+            id="intro_search"
+            ref={introSearchRef}
+            style={{
+                position: isFixed ? 'fixed' : 'relative',
+                top: isFixed ? (isSmallScreen ? '-800px' : '-200px') : 'auto',
+                zIndex: 5,
+            }}
         >
             <article id="intro_search_part1">
                 <div id="intro_search_part1A">
@@ -54,8 +66,6 @@ function IntroSearch() {
                     style={{
                         position: isFixed ? 'fixed' : 'relative',
                         top: isFixed ? '88px' : 'auto',
-                        width: '570px',
-                        zIndex: 5,
                     }}
                 >
                     <div id="intro_search_part1B_el1">
@@ -72,11 +82,10 @@ function IntroSearch() {
             <article 
                 id="intro_search_part2"
                 style={{
-                    display : isDisplayed ? "none" : "block"
+                    display: isDisplayed ? "none" : "block"
                 }}
             >
-
-                </article>
+            </article>
         </section>
     );
 }
