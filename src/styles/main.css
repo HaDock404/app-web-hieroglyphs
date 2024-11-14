@@ -1,11 +1,20 @@
 #mainX {
     width: calc(100% - 200px);
     height: auto;
-    background-color: #036635;
+    background-color: #ffffff;
     z-index: 1;
     padding: 100px;
 
 
+}
+
+#container-box {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: min-content;
+    grid-gap: 40px;
 }
 
 #main {
@@ -34,5 +43,21 @@
 }
 
 .box-main:hover {
-    background-color: #2a7b53;
+    background-color: #ececec;
+}
+
+.box-main-el1 {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.box-main-el2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center;
+    color: #656461;
 }

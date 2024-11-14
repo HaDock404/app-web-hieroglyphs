@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
-import Icon1 from './Icon3.jsx'
+import Icon1 from './Icon4.jsx'
 
 function MainX() {
     const mainRef = useRef(null);
@@ -46,150 +46,200 @@ function MainX() {
                 marginTop: isUp ? (isSmallMain ? '710px' : '380px') : '0px'
         }}
         >
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
-            hello
-            <br/>
+            <section id='container-box'>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+                <div className='box-main'>
+                    <div className='box-main-el1'>
+                        <Icon1 />
+                    </div>
+                    <div className='box-main-el2'>
+                        magnifying-glass
+                    </div>
+                </div>
+            </section>
         </section>
     )
 }
