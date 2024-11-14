@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import IntroSearch from "../components/IntroSearch"
+import MainX from "../components/MainX"
 import Main from "../components/Main"
 
 function Homepage() {
@@ -7,7 +8,9 @@ function Homepage() {
         <div id="main-container">
             <Header />
             <IntroSearch />
-            <Main />
+            <MainX />
+            
+          
         </div>
     )
 }

@@ -154,6 +154,9 @@
     #intro_search_part1B {
         width: 380px;
     }
+    #intro_search_part1A_el1 {
+        font-size: 28px;
+    }
 }
 
 
@@ -189,7 +192,7 @@
 
     #intro_search {
         width: calc(100% - 60px);
-        height: 100%;
+        height: 550px;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 50px;
@@ -237,7 +240,7 @@
 @media screen and (max-width: 509px) and (min-width: 435px) {
     #intro_search {
         width: calc(100% - 60px);
-        height: 100%;
+        height: 550px;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 50px;
@@ -285,7 +288,7 @@
 @media screen and (max-width: 434px) {
     #intro_search {
         width: calc(100% - 60px);
-        height: 100%;
+        height: 550px;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 50px;

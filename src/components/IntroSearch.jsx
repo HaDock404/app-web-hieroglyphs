@@ -4,9 +4,10 @@ import Icon3 from './Icon3.jsx';
 
 function IntroSearch() {
     const introSearchRef = useRef(null);
+    const introSearchPart1BRef = useRef(null);
     const [isFixed, setIsFixed] = useState(false);
     const [isDisplayed, setIsDisplayed] = useState(false);
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 739);
+    const [isSmallScreen, setIsSmallScreen] = useState(() => window.innerWidth < 739);
 
     useEffect(() => {
         const handleResize = () => {
@@ -14,6 +15,7 @@ function IntroSearch() {
         };
 
         window.addEventListener('resize', handleResize);
+        handleResize();
         return () => {
             window.removeEventListener('resize', handleResize);
         };
@@ -21,15 +23,18 @@ function IntroSearch() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollThreshold = window.innerWidth > 739 ? 200 : 560;
+            const scrollThreshold = window.innerWidth > 739 ? 200 : 529;
 
             if (introSearchRef.current) {
+                console.log(window.scrollY)
                 if (window.scrollY >= scrollThreshold) {
                     setIsDisplayed(true);
                     setIsFixed(true);
+                    console.log("top")
                 } else if (window.scrollY < scrollThreshold){
                     setIsDisplayed(false);
                     setIsFixed(false);
+                    
                 }
             }
         };
@@ -46,7 +51,7 @@ function IntroSearch() {
             ref={introSearchRef}
             style={{
                 position: isFixed ? 'fixed' : 'relative',
-                top: isFixed ? (isSmallScreen ? '-800px' : '-200px') : 'auto',
+                top: isFixed ? (isSmallScreen ? '-530px' : '-200px') : 'auto',
                 zIndex: 5,
             }}
         >
@@ -62,7 +67,7 @@ function IntroSearch() {
 
                 <div
                     id="intro_search_part1B"
-                    ref={introSearchRef}
+                    ref={introSearchPart1BRef}
                     style={{
                         position: isFixed ? 'fixed' : 'relative',
                         top: isFixed ? '88px' : 'auto',
