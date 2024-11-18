@@ -1,7 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
 import Icon1 from './Icon4.jsx'
-import { ArrowTest } from '@hieroglyphs.io/react';
+import { MinusCircle,
+        ArrowBendDownLeft, 
+        ArrowBendDownRight,
+        ArrowBendLeftDown,
+        ArrowBendLeftUp,
+        ArrowBendRightDown,
+        ArrowBendRightUp,
+        ArrowBendUpLeft,
+        ArrowBendUpRight,
+        ArrowCircleDown,
+        ArrowCircleDownLeft,
+        ArrowCircleDownRight,
+        ArrowCircleLeft,
+        ArrowCircleRight,
+        ArrowCircleUpLeft,
+        ArrowCircleUpRight
+    } from '@hieroglyphs.io/react';
 
 function MainX() {
     const mainRef = useRef(null);
@@ -50,7 +66,7 @@ function MainX() {
             <section id='container-box'>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <ArrowTest color='#656461'/>
+                        <MinusCircle color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -58,7 +74,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendDownLeft color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -66,7 +82,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendDownRight color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -74,7 +90,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendLeftDown color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -82,7 +98,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendLeftUp color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -90,7 +106,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendRightDown color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -98,7 +114,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendRightUp color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -106,7 +122,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendUpLeft color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -114,7 +130,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowBendUpRight color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -122,7 +138,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleDown color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -130,7 +146,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleDownLeft color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -138,7 +154,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleDownRight color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -146,7 +162,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleLeft color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -154,7 +170,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleRight color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -162,7 +178,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleUpLeft color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass
@@ -170,7 +186,7 @@ function MainX() {
                 </div>
                 <div className='box-main'>
                     <div className='box-main-el1'>
-                        <Icon1 />
+                        <ArrowCircleUpRight color='#656461'/>
                     </div>
                     <div className='box-main-el2'>
                         magnifying-glass

@@ -26,7 +26,6 @@ function IntroSearch() {
             const scrollThreshold = window.innerWidth > 739 ? 200 : 529;
 
             if (introSearchRef.current) {
-                console.log(window.scrollY)
                 if (window.scrollY >= scrollThreshold) {
                     setIsDisplayed(true);
                     setIsFixed(true);
