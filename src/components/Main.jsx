@@ -18,11 +18,14 @@ import { MinusCircle,
         ArrowCircleUpLeft,
         ArrowCircleUpRight
     } from '@hieroglyphs.io/react';
+import * as Hieroglyphs from '@hieroglyphs.io/react'
+import pluginsData from '../data/plugins.json';
 
 function MainX() {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
+    const sortedPlugins = [...pluginsData].sort((a, b) => a.plugin_name.localeCompare(b.plugin_name));
 
     useEffect(() => {
         const handleResize = () => {
@@ -64,198 +67,27 @@ function MainX() {
         }}
         >
             <section id='container-box'>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <MinusCircle color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendDownLeft color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendDownRight color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendLeftDown color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendLeftUp color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendRightDown color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendRightUp color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendUpLeft color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowBendUpRight color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleDown color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleDownLeft color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleDownRight color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleLeft color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleRight color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleUpLeft color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <ArrowCircleUpRight color='#656461'/>
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
-                <div className='box-main'>
-                    <div className='box-main-el1'>
-                        <Icon1 />
-                    </div>
-                    <div className='box-main-el2'>
-                        magnifying-glass
-                    </div>
-                </div>
+                {sortedPlugins.map(({ id, plugin_component, plugin_name }) => {
+                    // Récupérer dynamiquement le composant à partir de l'import global
+                    const Component = Hieroglyphs[plugin_component];
+
+                    // Vérifier si le composant existe
+                    if (!Component) {
+                        console.warn(`Composant introuvable pour : ${plugin_component}`);
+                        return null;
+                    }
+
+                    return (
+                        <div className="box-main" key={id}>
+                            <div className="box-main-el1">
+                                <Component color="#656461" />
+                            </div>
+                            <div className="box-main-el2">
+                                {plugin_name}
+                            </div>
+                        </div>
+                    );
+                })}
             </section>
         </section>
     )

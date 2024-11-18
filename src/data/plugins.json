@@ -1,0 +1,174 @@
+[
+    {
+        "id": "p0000",
+        "plugin_component": "ArrowBendDownLeft",
+        "plugin_name": "arrow-bend-down-left",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0001",
+        "plugin_component": "ArrowBendDownRight",
+        "plugin_name": "arrow-bend-down-right",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0002",
+        "plugin_component": "ArrowBendLeftDown",
+        "plugin_name": "arrow-bend-left-down",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0003",
+        "plugin_component": "ArrowBendLeftUp",
+        "plugin_name": "arrow-bend-left-up",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0004",
+        "plugin_component": "ArrowBendRightDown",
+        "plugin_name": "arrow-bend-right-down",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0005",
+        "plugin_component": "ArrowBendRightUp",
+        "plugin_name": "arrow-bend-right-up",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0006",
+        "plugin_component": "ArrowBendUpLeft",
+        "plugin_name": "arrow-bend-up-left",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0008",
+        "plugin_component": "ArrowBendUp",
+        "plugin_name": "arrow-bend-up-right",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0009",
+        "plugin_component": "ArrowCircleDownLeft",
+        "plugin_name": "arrow-circle-down-left",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0010",
+        "plugin_component": "ArrowCircleDownRight",
+        "plugin_name": "arrow-circle-down-right",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0011",
+        "plugin_component": "ArrowCircleDown",
+        "plugin_name": "arrow-circle-down",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0012",
+        "plugin_component": "ArrowCircleLeft",
+        "plugin_name": "arrow-circle-left",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0013",
+        "plugin_component": "ArrowCircleRight",
+        "plugin_name": "arrow-circle-right",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0014",
+        "plugin_component": "ArrowCircleUpLeft",
+        "plugin_name": "arrow-circle-up-left",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0015",
+        "plugin_component": "ArrowCircleUpRight",
+        "plugin_name": "arrow-circle-up-right",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0016",
+        "plugin_component": "ArrowCircleUp",
+        "plugin_name": "arrow-circle-up",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0017",
+        "plugin_component": "MinusCircle",
+        "plugin_name": "minus-circle",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0018",
+        "plugin_component": "PlusCircle",
+        "plugin_name": "plus-circle",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    },
+    {
+        "id": "p0019",
+        "plugin_component": "XCircle",
+        "plugin_name": "x-circle",
+        "tags": [
+            "test",
+            "test2"
+        ]
+    }
+    
+]
