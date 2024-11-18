@@ -1,25 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
-import Icon1 from './Icon4.jsx'
-import { MinusCircle,
-        ArrowBendDownLeft, 
-        ArrowBendDownRight,
-        ArrowBendLeftDown,
-        ArrowBendLeftUp,
-        ArrowBendRightDown,
-        ArrowBendRightUp,
-        ArrowBendUpLeft,
-        ArrowBendUpRight,
-        ArrowCircleDown,
-        ArrowCircleDownLeft,
-        ArrowCircleDownRight,
-        ArrowCircleLeft,
-        ArrowCircleRight,
-        ArrowCircleUpLeft,
-        ArrowCircleUpRight
-    } from '@hieroglyphs.io/react';
+
 import * as Hieroglyphs from '@hieroglyphs.io/react'
-import pluginsData from '../data/plugins.json';
+import pluginsData from '../data/plugin-list.json';
 
 function MainX() {
     const mainRef = useRef(null);
