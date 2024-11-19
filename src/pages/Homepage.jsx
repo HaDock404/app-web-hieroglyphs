@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as Hieroglyphs from '@hieroglyphs.io/react'
 import pluginsData from '../data/plugin-list.json';
 
 import Header from "../components/Header"

@@ -1264,10 +1264,10 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.1.tgz"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@hieroglyphs.io/react@^0.1.46":
-  version "0.1.46"
-  resolved "https://registry.npmjs.org/@hieroglyphs.io/react/-/react-0.1.46.tgz"
-  integrity sha512-v8tWJS+H2nrgXnDfkKqsu+ivqyPATeY/nPM3X88wMDe0qr9y90KNq36eKfjCshIG3OmYc3KQc40SJllWgm0tmQ==
+"@hieroglyphs.io/react@^0.1.67":
+  version "0.1.67"
+  resolved "https://registry.npmjs.org/@hieroglyphs.io/react/-/react-0.1.67.tgz"
+  integrity sha512-NB+ofgjp/GCqqa2Mvqy4je6cCP/UWbA8xtmMNwb76HE9hH0jn6/EzcNdxWIojQpsXxuC5ao8XYniJvdcN51N/Q==
   dependencies:
     react-router-dom "^6.28.0"
 
