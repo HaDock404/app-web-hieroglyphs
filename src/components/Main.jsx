@@ -2,13 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
 
 import * as Hieroglyphs from '@hieroglyphs.io/react'
-import pluginsData from '../data/plugin-list.json';
 
 function MainX({ items }) {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
-    const sortedPlugins = [...pluginsData].sort((a, b) => a.plugin_name.localeCompare(b.plugin_name));
 
     useEffect(() => {
         const handleResize = () => {

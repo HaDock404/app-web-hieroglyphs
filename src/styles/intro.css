@@ -1,0 +1,34 @@
+#section-about-intro {
+    width: calc(100% - 80px);
+    padding-left: 30px;
+    padding-right: 50px;
+    height: 100%;
+    padding-top: 150px;
+}
+
+#article-about-intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-about-intro {
+    width: 70%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    color: rgba(61, 61, 61);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#gael_link {
+    color: #036635;
+    text-decoration: none;
+    font-weight: bold;
+}
