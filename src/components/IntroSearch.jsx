@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/intro_search.css';
 import Icon3 from './Icon3.jsx';
 
-function IntroSearch() {
+function IntroSearch({ search, onSearchChange }) {
     const introSearchRef = useRef(null);
     const introSearchPart1BRef = useRef(null);
     const [isFixed, setIsFixed] = useState(false);
@@ -44,6 +44,19 @@ function IntroSearch() {
         };
     }, [isSmallScreen]);
 
+    const [inputValue, setInputValue] = useState(search);
+    const handleSearch = () => {
+        onSearchChange(inputValue);
+    };
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     return (
         <section
             id="intro_search"
@@ -76,10 +89,20 @@ function IntroSearch() {
                         <div>Regular</div>
                         <div>▼</div>
                     </div>
-                    <input id="intro_search_part1B_el2" type="text" placeholder="Search for icons" />
-                    <div id="intro_search_part1B_el3">
+                    <input 
+                        id="intro_search_part1B_el2" 
+                        type="text" 
+                        placeholder="Search for icons"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        onKeyDown={handleKeyPress}
+                    />
+                    <button 
+                        id="intro_search_part1B_el3"
+                        onClick={handleSearch}
+                    >
                         <Icon3 />
-                    </div>
+                    </button>
                 </div>
             </article>
 

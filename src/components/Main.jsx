@@ -4,7 +4,7 @@ import '../styles/main.css'
 import * as Hieroglyphs from '@hieroglyphs.io/react'
 import pluginsData from '../data/plugin-list.json';
 
-function MainX() {
+function MainX({ items }) {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
@@ -42,38 +42,41 @@ function MainX() {
     }, [isSmallMain]);
 
     return (
-        <section 
-            id="main"
-            ref={mainRef}
-            style={{
-                marginTop: isUp ? (isSmallMain ? '710px' : '380px') : '0px'
-        }}
+        <section
+          id="main"
+          ref={mainRef}
+          style={{
+            marginTop: isUp ? (isSmallMain ? '710px' : '380px') : '0px',
+          }}
         >
-            <section id='container-box'>
-                {sortedPlugins.map(({ id, plugin_component, plugin_name }) => {
-                    // Récupérer dynamiquement le composant à partir de l'import global
-                    const Component = Hieroglyphs[plugin_component];
-
-                    // Vérifier si le composant existe
-                    if (!Component) {
-                        console.warn(`Composant introuvable pour : ${plugin_component}`);
-                        return null;
-                    }
-
-                    return (
-                        <div className="box-main" key={id}>
-                            <div className="box-main-el1">
-                                <Component color="#656461" />
-                            </div>
-                            <div className="box-main-el2">
-                                {plugin_name}
-                            </div>
-                        </div>
-                    );
-                })}
-            </section>
+          <section id="container-box">
+            {/* Vérifier si des éléments existent après le filtrage */}
+            {items.length > 0 ? (
+              items.map(({ id, plugin_component, plugin_name }) => {
+                const Component = Hieroglyphs[plugin_component];
+                if (!Component) {
+                  console.warn(`Composant introuvable pour : ${plugin_component}`);
+                  return null;
+                }
+      
+                return (
+                  <div className="box-main" key={id}>
+                    <div className="box-main-el1">
+                      <Component color="#656461" />
+                    </div>
+                    <div className="box-main-el2">{plugin_name}</div>
+                  </div>
+                );
+              })
+            ) : (
+              <div style={{ padding: '20px', textAlign: 'center', color: '#888' }}>
+                Aucun résultat trouvé
+              </div>
+            )}
+          </section>
         </section>
-    )
+      );
+      
 }
 
 export default MainX
