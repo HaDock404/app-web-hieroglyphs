@@ -15,7 +15,7 @@ function Header() {
                     <Icon2 />
                 </Link>
             </div>
-            <Link to="/" id='part2'>About us</Link>
+            <Link to="/about" id='part2'>About us</Link>
         </header>
     )
 }

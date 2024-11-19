@@ -50,8 +50,8 @@
 ,
   {
     "id": "p0007",
-    "plugin_component": "ArrowBendUp",
-    "plugin_name": "arrow-bend-up",
+    "plugin_component": "ArrowBendUpRight",
+    "plugin_name": "arrow-bend-up-right",
     "tags": ["test", "test2"]
   }
 ,

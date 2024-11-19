@@ -11,6 +11,7 @@ import './styles/normalize.css'
 import GlobalStyle from './styles/createGlobalStyle.jsx'
 
 import Homepage from './pages/Homepage';
+import AboutUs from './pages/AboutUs.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <GlobalStyle/>
         <Routes>
           <Route path="/" element={<Homepage />}/>
+          <Route path="/about" element={<AboutUs />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
