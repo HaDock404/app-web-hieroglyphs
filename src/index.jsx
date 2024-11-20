@@ -14,6 +14,7 @@ import ScrollToTop from "./styles/ScrollToTop";
 import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs.jsx';
 import LegalNotice from './pages/LegalNotice.jsx';
+import TermsConditions from './pages/TermsConditions.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
           <Route path="/" element={<Homepage />}/>
           <Route path="/about" element={<AboutUs />}/>
           <Route path="/legal-notice" element={<LegalNotice />}/>
+          <Route path="/terms-conditions" element={<TermsConditions />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,
