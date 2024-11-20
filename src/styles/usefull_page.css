@@ -1,0 +1,22 @@
+.section_usefull_page {
+    width: calc(100% - 80px);
+    padding-left: 30px;
+    padding-right: 50px;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.h1_usefull_page {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.h2_usefull_page {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
