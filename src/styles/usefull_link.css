@@ -1,0 +1,24 @@
+#usefull_link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.usefull_link_style {
+    color: black;
+    margin: 10px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 530px) {
+    #usefull_link {
+        flex-direction: column;
+    }
+}
