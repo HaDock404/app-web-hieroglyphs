@@ -26,6 +26,29 @@
     height: 100%;
     border-radius: 20px;
     box-shadow: inset 4px 4px 4px 0px rgba(0,0,0,0.4);
+    position: relative; /* Utiliser 'relative' pour que la vidéo reste à l'intérieur du conteneur */
+    z-index: 0;
+    overflow: hidden;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Utiliser 'relative' pour que la vidéo reste à l'intérieur du conteneur */
+    z-index: 0;
+    overflow: hidden;
+    border-radius: inherit; /* Hérite du border-radius de la boîte parente */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    display: block;
+    
 }
 
 #intro_search_part1A_el1 {

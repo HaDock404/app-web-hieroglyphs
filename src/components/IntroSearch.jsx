@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/intro_search.css';
 import Icon3 from './Icon3.jsx';
+import video from '../assets/videos/video.mp4'
 
 function IntroSearch({ search, onSearchChange }) {
     const introSearchRef = useRef(null);
@@ -112,6 +113,7 @@ function IntroSearch({ search, onSearchChange }) {
                     display: isDisplayed ? "none" : "block"
                 }}
             >
+                <video src={video} autoPlay loop muted playsInline preload="auto" />
             </article>
         </section>
     );
