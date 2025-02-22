@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/app-web-hieroglyphs/static/css/main.309f2cb4.css",
-    "main.js": "/app-web-hieroglyphs/static/js/main.cff29f8b.js",
+    "main.css": "/app-web-hieroglyphs/static/css/main.e32c6bea.css",
+    "main.js": "/app-web-hieroglyphs/static/js/main.d326c3ef.js",
     "static/js/453.86e7100f.chunk.js": "/app-web-hieroglyphs/static/js/453.86e7100f.chunk.js",
     "static/media/video.mp4": "/app-web-hieroglyphs/static/media/video.61b12da5b8ebea90cad5.mp4",
     "index.html": "/app-web-hieroglyphs/index.html",
-    "main.309f2cb4.css.map": "/app-web-hieroglyphs/static/css/main.309f2cb4.css.map",
-    "main.cff29f8b.js.map": "/app-web-hieroglyphs/static/js/main.cff29f8b.js.map",
+    "main.e32c6bea.css.map": "/app-web-hieroglyphs/static/css/main.e32c6bea.css.map",
+    "main.d326c3ef.js.map": "/app-web-hieroglyphs/static/js/main.d326c3ef.js.map",
     "453.86e7100f.chunk.js.map": "/app-web-hieroglyphs/static/js/453.86e7100f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.309f2cb4.css",
-    "static/js/main.cff29f8b.js"
+    "static/css/main.e32c6bea.css",
+    "static/js/main.d326c3ef.js"
   ]
 }
