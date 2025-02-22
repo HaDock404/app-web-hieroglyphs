@@ -46,3 +46,51 @@
     text-align: center;
     color: #656461;
 }
+
+.modal-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .modal-content {
+    background: white;
+    padding: 0px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.01); /* Assombrit légèrement */
+    backdrop-filter: blur(10px);
+    border: solid 0.5px #656461;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    bottom: 10px;
+    width: 70%;
+    height: 200px;
+  }
+
+  .test-modal {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .test-modal-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 20px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }

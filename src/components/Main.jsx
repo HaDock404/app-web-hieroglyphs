@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
 
+import Icon3 from './Icon3';
+import Icon5 from './Icon5';
+
 import * as Hieroglyphs from '@hieroglyphs.io/react'
 
 function MainX({ items }) {
@@ -96,33 +99,16 @@ function MainX({ items }) {
         {isModalOpen && (
           <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <h2>Détails</h2>
-              <p>{selectedPlugin}</p>
-              <button onClick={() => setIsModalOpen(false)}>Fermer</button>
+              <div className='test-modal'>
+                <div>Détails</div>
+                <p>{selectedPlugin}</p>
+                <button className='test-modal-button' onClick={() => setIsModalOpen(false)}>
+                  <Icon5 />
+                </button>
+              </div>
             </div>
           </div>
         )}
-  
-        {/* Styles CSS */}
-        <style jsx>{`
-          .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-          }
-          .modal-content {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-          }
-        `}</style>
       </>
     );
       
