@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
 
-import Icon3 from './Icon3';
 import Icon5 from './Icon5';
 
 import * as Hieroglyphs from '@hieroglyphs.io/react'
@@ -13,8 +12,11 @@ function MainX({ items }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPlugin, setSelectedPlugin] = useState(null);
 
-    const openModal = (plugin_name) => {
+    const [selectedPluginX, setSelectedPluginX] = useState(null);
+
+    const openModal = (plugin_name, plugin_component) => {
       setSelectedPlugin(plugin_name);
+      setSelectedPluginX(plugin_component)
       setIsModalOpen(true);
     };
 
@@ -49,6 +51,8 @@ function MainX({ items }) {
         };
     }, [isSmallMain]);
 
+    const SelectedIcon = selectedPluginX ? Hieroglyphs[selectedPluginX] : null;
+
     return (
       <>
         <section
@@ -71,7 +75,7 @@ function MainX({ items }) {
                   <div
                     className="box-main"
                     key={id}
-                    onClick={() => openModal(plugin_name)}
+                    onClick={() => openModal(plugin_name, plugin_component)}
                   >
                     <div className="box-main-el1">
                       <Component color="#656461" />
@@ -99,13 +103,28 @@ function MainX({ items }) {
         {isModalOpen && (
           <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <div className='test-modal'>
+              <div className='modal-placement'>
+                
                 <div>Détails</div>
                 <p>{selectedPlugin}</p>
-                <button className='test-modal-button' onClick={() => setIsModalOpen(false)}>
+                <div style={{
+                  width:'20px',
+                  height:"20px"
+                }}>
+                {SelectedIcon ? (
+                <div className="icon-container">
+                  <SelectedIcon color="#656461" />
+                </div>
+              ) : (
+                <p>/error</p>
+              )}
+              </div>
+
+                <button className='modal-button' onClick={() => setIsModalOpen(false)}>
                   <Icon5 />
                 </button>
               </div>
+
             </div>
           </div>
         )}
