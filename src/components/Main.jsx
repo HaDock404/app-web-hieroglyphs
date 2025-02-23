@@ -11,6 +11,7 @@ function MainX({ items }) {
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPlugin, setSelectedPlugin] = useState(null);
+    const [content, setContent] = useState("Cliquez sur un bouton pour changer ce texte");
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
 
@@ -126,7 +127,15 @@ function MainX({ items }) {
                   </div>
                 </div>
                 <div className='modal-placement-el2'>
-
+                    <div className='modal-placement-el2-box1'>
+                    <button onClick={() => setContent("Contenu du bouton 1")}>Bouton 1</button>
+                    <button onClick={() => setContent("Contenu du bouton 2")}>Bouton 2</button>
+                    <button onClick={() => setContent("Contenu du bouton 3")}>Bouton 3</button>
+                    <button onClick={() => setContent("Contenu du bouton 4")}>Bouton 4</button>
+                    </div>
+                    <div className='modal-placement-el2-box2'>
+                      {content}
+                    </div>
                 </div>
                 <button className='modal-button' onClick={() => setIsModalOpen(false)}>
                   <Icon5 />
