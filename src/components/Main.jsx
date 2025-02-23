@@ -104,22 +104,30 @@ function MainX({ items }) {
           <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <div className='modal-placement'>
-                
-                <div>Détails</div>
-                <p>{selectedPlugin}</p>
-                <div style={{
-                  width:'20px',
-                  height:"20px"
-                }}>
-                {SelectedIcon ? (
-                <div className="icon-container">
-                  <SelectedIcon color="#656461" />
-                </div>
-              ) : (
-                <p>/error</p>
-              )}
-              </div>
 
+                <div className='modal-placement-el1'>
+                  <div className='modal-placement-el1-box1'>
+                    <div className='modal-placement-el1-box1-icon'>
+                      {SelectedIcon ? (
+                      <div className="icon-container">
+                        <SelectedIcon color="#024f29" />
+                      </div>
+                        ) : (
+                      <p>/error</p>
+                    )}
+                    </div>
+                    <div className='modal-placement-el1-box1-name'>
+                      {selectedPlugin}
+                    </div>
+                  </div>
+                  <div className='modal-placement-el1-box2'>
+                    available in V1.0+ <br/>
+                    U+EB14
+                  </div>
+                </div>
+                <div className='modal-placement-el2'>
+
+                </div>
                 <button className='modal-button' onClick={() => setIsModalOpen(false)}>
                   <Icon5 />
                 </button>
