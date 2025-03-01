@@ -105,7 +105,6 @@ function MainX({ items }) {
           <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <div className='modal-placement'>
-
                 <div className='modal-placement-el1'>
                   <div className='modal-placement-el1-box1'>
                     <div className='modal-placement-el1-box1-icon'>
@@ -128,10 +127,10 @@ function MainX({ items }) {
                 </div>
                 <div className='modal-placement-el2'>
                     <div className='modal-placement-el2-box1'>
-                    <button onClick={() => setContent("Contenu du bouton 1")}>Bouton 1</button>
-                    <button onClick={() => setContent("Contenu du bouton 2")}>Bouton 2</button>
-                    <button onClick={() => setContent("Contenu du bouton 3")}>Bouton 3</button>
-                    <button onClick={() => setContent("Contenu du bouton 4")}>Bouton 4</button>
+                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 1")}>Tags</button>
+                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 2")}>React</button>
+                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 3")}>Web</button>
+                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 4")}>Vue</button>
                     </div>
                     <div className='modal-placement-el2-box2'>
                       {content}
