@@ -11,7 +11,7 @@ function MainX({ items }) {
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPlugin, setSelectedPlugin] = useState(null);
-    const [content, setContent] = useState("Cliquez sur un bouton pour changer ce texte");
+    const [content, setContent] = useState("test ouverture");
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
 
@@ -102,7 +102,12 @@ function MainX({ items }) {
   
         {/* Modale */}
         {isModalOpen && (
-          <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
+          <div className="modal-overlay" 
+            onClick={() => {
+              setIsModalOpen(false);
+              setContent("test ouverture")
+            }}
+          >
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <div className='modal-placement'>
                 <div className='modal-placement-el1'>
@@ -136,7 +141,12 @@ function MainX({ items }) {
                       {content}
                     </div>
                 </div>
-                <button className='modal-button' onClick={() => setIsModalOpen(false)}>
+                <button className='modal-button' 
+                  onClick={() => {
+                    setIsModalOpen(false);
+                    setContent("test ouverture")
+                  }}
+                >
                   <Icon5 />
                 </button>
               </div>
