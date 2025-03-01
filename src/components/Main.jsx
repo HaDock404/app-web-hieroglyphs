@@ -5,6 +5,8 @@ import Icon5 from './Icon5';
 
 import * as Hieroglyphs from '@hieroglyphs.io/react'
 
+import pluginsData from '../data/plugin-list.json';
+
 function MainX({ items }) {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
@@ -12,6 +14,7 @@ function MainX({ items }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPlugin, setSelectedPlugin] = useState(null);
     const [content, setContent] = useState("test ouverture");
+    const [pluginDetails, setPluginDetails] = useState("No tags")
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
 
@@ -19,6 +22,11 @@ function MainX({ items }) {
       setSelectedPlugin(plugin_name);
       setSelectedPluginX(plugin_component)
       setIsModalOpen(true);
+      
+      const plugin = pluginsData.find((p) => p.plugin_name === plugin_name);
+      const tags = plugin ? plugin.tags.join(", ") : "No tags";
+      setPluginDetails(tags);
+      setContent(tags)
     };
 
     useEffect(() => {
@@ -132,7 +140,7 @@ function MainX({ items }) {
                 </div>
                 <div className='modal-placement-el2'>
                     <div className='modal-placement-el2-box1'>
-                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 1")}>Tags</button>
+                      <button className='modal-placement-button-content' onClick={() => setContent(pluginDetails)}>Tags</button>
                       <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 2")}>React</button>
                       <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 3")}>Web</button>
                       <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 4")}>Vue</button>
