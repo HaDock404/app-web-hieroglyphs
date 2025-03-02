@@ -32,7 +32,16 @@ function MainX({ items }) {
       setSelectedButton(1);
 
       const reactText = plugin ? plugin.plugin_component : "No plugin";
-      setPluginComponent(`<div>${reactText}</div><br/><div>Exemple</div>`)
+      setPluginComponent(`
+        <div className='install'>npm install @hieroglyphs.io/react</div>
+        <br/>
+        import React from 'react';
+        <br/>
+        import * as Hieroglyphs from '@hieroglyphs.io/react';
+        <br/>
+        <br/>
+        &lt;Hieroglyphs.${reactText} /&gt;
+        `)
     };
 
     const handleButtonClick = (newContent, buttonId) => {
