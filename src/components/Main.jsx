@@ -41,9 +41,9 @@ function MainX({ items }) {
           npm install @hieroglyphs.io/react
         </div>
         <br/>
-        <i style="color: #AF75DD; font-style: normal;">import</i> <i style="color: white; font-style: normal;">React</i> <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: #65B181; font-style: normal;">'react'</i>;
+        <i style="color: #AF75DD; font-style: normal;">import</i> <i style="color: white; font-style: normal;">React</i> <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: white; font-style: normal;">'react'</i>;
         <br/>
-        <i style="color: #AF75DD; font-style: normal;">import</i> * <i style="color: #AF75DD; font-style: normal;">as</i> Hieroglyphs <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: #65B181; font-style: normal;">'@hieroglyphs.io/react'</i>;
+        <i style="color: #AF75DD; font-style: normal;">import</i> * <i style="color: #AF75DD; font-style: normal;">as</i> Hieroglyphs <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: white; font-style: normal;">'@hieroglyphs.io/react'</i>;
         <br/>
         <br/>
         <i style="color: #D95752; font-style: normal;">&lt;Hieroglyphs.${reactText} /&gt;</i>
