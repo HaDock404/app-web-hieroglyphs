@@ -15,7 +15,7 @@ function MainX({ items }) {
     const [selectedPlugin, setSelectedPlugin] = useState(null);
     const [content, setContent] = useState("test ouverture");
     const [pluginDetails, setPluginDetails] = useState("No tags")
-    const [selectedButton, setSelectedButton] = useState(null);
+    const [selectedButton, setSelectedButton] = useState(1);
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
 
@@ -28,6 +28,7 @@ function MainX({ items }) {
       const tags = plugin ? plugin.tags.join(", ") : "No tags";
       setPluginDetails(tags);
       setContent(tags)
+      setSelectedButton(1);
     };
 
     const handleButtonClick = (newContent, buttonId) => {
@@ -159,7 +160,7 @@ function MainX({ items }) {
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 3 ? 'selected' : ''}`}
                         onClick={() => handleButtonClick('Contenu du bouton 3', 3)}>
-                          Web
+                          Swift
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 4 ? 'selected' : ''}`}
