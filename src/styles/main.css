@@ -152,9 +152,9 @@
 }
 
 .modal-placement-button-content {
-  background-color: #024f29;
-  color: white;
-  border: none;
+  background-color: white;
+  color: #024f29;
+  border: solid 0.5px #024f29;
   border-radius: 20px;
   width: 100%;
   margin-bottom: 5px;
@@ -163,13 +163,18 @@
   cursor: pointer;
 }
 
+.modal-placement-button-content.selected {
+  background-color: #024f29; /* Couleur de fond lorsqu'il est sélectionné */
+  color: white; /* Couleur du texte pour une meilleure visibilité */
+}
+
 .modal-placement-el2-box2 {
   width: calc(100% - 20px);
   border: solid 0.5px #024f29;
   border-radius: 8px;
   margin-left: 20px;
   font-family: "Inter", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   color: #024f29;
   padding: 10px;

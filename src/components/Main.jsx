@@ -15,6 +15,7 @@ function MainX({ items }) {
     const [selectedPlugin, setSelectedPlugin] = useState(null);
     const [content, setContent] = useState("test ouverture");
     const [pluginDetails, setPluginDetails] = useState("No tags")
+    const [selectedButton, setSelectedButton] = useState(null);
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
 
@@ -27,6 +28,11 @@ function MainX({ items }) {
       const tags = plugin ? plugin.tags.join(", ") : "No tags";
       setPluginDetails(tags);
       setContent(tags)
+    };
+
+    const handleButtonClick = (newContent, buttonId) => {
+      setContent(newContent);
+      setSelectedButton(buttonId);
     };
 
     useEffect(() => {
@@ -140,10 +146,26 @@ function MainX({ items }) {
                 </div>
                 <div className='modal-placement-el2'>
                     <div className='modal-placement-el2-box1'>
-                      <button className='modal-placement-button-content' onClick={() => setContent(pluginDetails)}>Tags</button>
-                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 2")}>React</button>
-                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 3")}>Web</button>
-                      <button className='modal-placement-button-content' onClick={() => setContent("Contenu du bouton 4")}>Vue</button>
+                      <button 
+                        className={`modal-placement-button-content ${selectedButton === 1 ? 'selected' : ''}`}
+                        onClick={() => handleButtonClick(pluginDetails, 1)}>
+                          Tags
+                      </button>
+                      <button 
+                        className={`modal-placement-button-content ${selectedButton === 2 ? 'selected' : ''}`} 
+                        onClick={() => handleButtonClick('Contenu du bouton 2', 2)}>
+                          React
+                      </button>
+                      <button 
+                        className={`modal-placement-button-content ${selectedButton === 3 ? 'selected' : ''}`}
+                        onClick={() => handleButtonClick('Contenu du bouton 3', 3)}>
+                          Web
+                      </button>
+                      <button 
+                        className={`modal-placement-button-content ${selectedButton === 4 ? 'selected' : ''}`}
+                        onClick={() => handleButtonClick('Contenu du bouton 4', 4)}>
+                          Vue
+                      </button>
                     </div>
                     <div className='modal-placement-el2-box2'>
                       {content}
