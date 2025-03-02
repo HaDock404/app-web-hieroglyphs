@@ -15,6 +15,7 @@ function MainX({ items }) {
     const [selectedPlugin, setSelectedPlugin] = useState(null);
     const [content, setContent] = useState("test ouverture");
     const [pluginDetails, setPluginDetails] = useState("No tags")
+    const [pluginComponent, setPluginComponent] = useState("No plugin")
     const [selectedButton, setSelectedButton] = useState(1);
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
@@ -29,6 +30,9 @@ function MainX({ items }) {
       setPluginDetails(tags);
       setContent(tags)
       setSelectedButton(1);
+
+      const reactText = plugin ? plugin.plugin_component : "No plugin";
+      setPluginComponent(`<div>${reactText}</div><br/><div>Exemple</div>`)
     };
 
     const handleButtonClick = (newContent, buttonId) => {
@@ -154,7 +158,7 @@ function MainX({ items }) {
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 2 ? 'selected' : ''}`} 
-                        onClick={() => handleButtonClick('Contenu du bouton 2', 2)}>
+                        onClick={() => handleButtonClick(pluginComponent, 2)}>
                           React
                       </button>
                       <button 
@@ -169,7 +173,7 @@ function MainX({ items }) {
                       </button>
                     </div>
                     <div className='modal-placement-el2-box2'>
-                      {content}
+                      <div dangerouslySetInnerHTML={{ __html: content }} />
                     </div>
                 </div>
                 <button className='modal-button' 
