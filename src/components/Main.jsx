@@ -33,14 +33,20 @@ function MainX({ items }) {
 
       const reactText = plugin ? plugin.plugin_component : "No plugin";
       setPluginComponent(`
-        <div className='install'>npm install @hieroglyphs.io/react</div>
+        <div style="
+          color: white;
+          font-weight: 400;
+          "
+        >
+          npm install @hieroglyphs.io/react
+        </div>
         <br/>
-        import React from 'react';
+        <i style="color: #AF75DD; font-style: normal;">import</i> <i style="color: white; font-style: normal;">React</i> <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: #65B181; font-style: normal;">'react'</i>;
         <br/>
-        import * as Hieroglyphs from '@hieroglyphs.io/react';
+        <i style="color: #AF75DD; font-style: normal;">import</i> * <i style="color: #AF75DD; font-style: normal;">as</i> Hieroglyphs <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: #65B181; font-style: normal;">'@hieroglyphs.io/react'</i>;
         <br/>
         <br/>
-        &lt;Hieroglyphs.${reactText} /&gt;
+        <i style="color: #D95752; font-style: normal;">&lt;Hieroglyphs.${reactText} /&gt;</i>
         `)
     };
 
