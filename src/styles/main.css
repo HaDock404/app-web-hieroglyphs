@@ -98,7 +98,7 @@
   }
 
   .modal-placement-el1 {
-    width: 250px;
+    width: 320px;
     height: calc(100% - 40px);
     margin: 20px;
   }
@@ -113,7 +113,7 @@
 .modal-placement-el1-box1-icon {
   height: calc(100% - 40px);
   padding: 20px;
-  width: calc(50% - 40px);
+  width: calc(40% - 40px);
 }
 
 .modal-placement-el1-box1-name {
@@ -123,6 +123,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #656461;
+  width: 50%;
 }
 
 .icon-container {
