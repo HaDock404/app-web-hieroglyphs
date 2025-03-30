@@ -20,6 +20,11 @@ function MainX({ items }) {
     const [pluginComponent2, setPluginComponent2] = useState("No plugin")
     const [pluginComponent3, setPluginComponent3] = useState("No plugin")
     const [selectedButton, setSelectedButton] = useState(1);
+    const [Test1, setTest1] = useState("")
+    const [Test2, setTest2] = useState("")
+    const [Test3, setTest3] = useState("")
+    const [Test4, setTest4] = useState("")
+    const [Copy, setCopy] = useState("")
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
 
@@ -28,8 +33,10 @@ function MainX({ items }) {
       setSelectedPluginX(plugin_component)
       setIsModalOpen(true);
       
+      
       const plugin = pluginsData.find((p) => p.plugin_name === plugin_name);
       const tags = plugin ? plugin.tags.join(", ") : "No tags";
+      setCopy(tags)
       setPluginDetails(tags);
       setContent(tags)
       setSelectedButton(1);
@@ -110,11 +117,16 @@ function MainX({ items }) {
         </i>
       </div>
         `)
+      setTest1(tags)
+      setTest2(`Test2 ${reactText}`)
+      setTest3(`Test3 ${reactText}`)
+      setTest4(`Test4 ${reactText}`)
     };
 
-    const handleButtonClick = (newContent, buttonId) => {
+    const handleButtonClick = (newContent, buttonId, test) => {
       setContent(newContent);
       setSelectedButton(buttonId);
+      setCopy(test)
     };
 
     useEffect(() => {
@@ -201,7 +213,6 @@ function MainX({ items }) {
           <div className="modal-overlay" 
             onClick={() => {
               setIsModalOpen(false);
-              setContent("test ouverture")
             }}
           >
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -230,28 +241,28 @@ function MainX({ items }) {
                     <div className='modal-placement-el2-box1'>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 1 ? 'selected' : ''}`}
-                        onClick={() => handleButtonClick(pluginDetails, 1)}>
+                        onClick={() => handleButtonClick(pluginDetails, 1, Test1)}>
                           Tags
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 2 ? 'selected' : ''}`} 
-                        onClick={() => handleButtonClick(pluginComponent1, 2)}>
+                        onClick={() => handleButtonClick(pluginComponent1, 2, Test2)}>
                           React
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 3 ? 'selected' : ''}`}
-                        onClick={() => handleButtonClick(pluginComponent2, 3)}>
+                        onClick={() => handleButtonClick(pluginComponent2, 3, Test3)}>
                           Swift
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 4 ? 'selected' : ''}`}
-                        onClick={() => handleButtonClick(pluginComponent3, 4)}>
+                        onClick={() => handleButtonClick(pluginComponent3, 4, Test4)}>
                           Vue
                       </button>
                     </div>
                     <div className='modal-placement-el2-box2'>
                       <div dangerouslySetInnerHTML={{ __html: content }} />
-                      <CopyButton text="Mon texte à copier" />
+                      <CopyButton text={Copy} />
                     </div>
                 </div>
                 <button className='modal-button' 
