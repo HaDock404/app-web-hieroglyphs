@@ -164,6 +164,11 @@
   cursor: pointer;
 }
 
+.modal-placement-button-content.selected {
+  background-color: #024f29;
+  color: white;
+}
+
 .modal-placement-el2-box2 {
   width: calc(100% - 20px);
   border: solid 0.5px #024f29;
