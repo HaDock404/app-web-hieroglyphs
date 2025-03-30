@@ -52,7 +52,7 @@ function MainX({ items }) {
         <div style="background-color: white; width: 380px; color: #024f29; margin-bottom: 5px; padding-left: 3px;">
           <i style="color: #024f29; font-style: normal;">import</i> * <i style="color: #024f29; font-style: normal;">as</i> Hieroglyphs <i style="color: #024f29; font-style: normal;">from</i> <i style="color: #024f29; font-style: normal;">'@hieroglyphs.io/react'</i>;
        </div>
-        <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 3px;">&lt;Hieroglyphs.${reactText} /&gt;</i>
+        <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 3px; padding-right: 3px;">&lt;Hieroglyphs.${reactText} /&gt;</i>
         `)
     };
 
