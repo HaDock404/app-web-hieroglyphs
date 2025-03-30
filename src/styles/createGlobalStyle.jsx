@@ -18,6 +18,10 @@ const StyledGlobalStyle = createGlobalStyle`
         flex-direction: column;
         box-sizing: border-box;
     }
+    ::selection {
+        background-color: #024f29;
+        color: white;
+    }
 `
 
 function GlobalStyle() {
