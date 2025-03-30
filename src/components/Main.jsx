@@ -15,7 +15,9 @@ function MainX({ items }) {
     const [selectedPlugin, setSelectedPlugin] = useState(null);
     const [content, setContent] = useState("test ouverture");
     const [pluginDetails, setPluginDetails] = useState("No tags")
-    const [pluginComponent, setPluginComponent] = useState("No plugin")
+    const [pluginComponent1, setPluginComponent1] = useState("No plugin")
+    const [pluginComponent2, setPluginComponent2] = useState("No plugin")
+    const [pluginComponent3, setPluginComponent3] = useState("No plugin")
     const [selectedButton, setSelectedButton] = useState(1);
 
     const [selectedPluginX, setSelectedPluginX] = useState(null);
@@ -32,7 +34,7 @@ function MainX({ items }) {
       setSelectedButton(1);
 
       const reactText = plugin ? plugin.plugin_component : "No plugin";
-      setPluginComponent(`
+      setPluginComponent1(`
         <div style="
           color: #024f29;
           background-color: white;
@@ -53,6 +55,59 @@ function MainX({ items }) {
           <i style="color: #024f29; font-style: normal;">import</i> * <i style="color: #024f29; font-style: normal;">as</i> Hieroglyphs <i style="color: #024f29; font-style: normal;">from</i> <i style="color: #024f29; font-style: normal;">'@hieroglyphs.io/react'</i>;
        </div>
         <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 3px; padding-right: 3px;">&lt;Hieroglyphs.${reactText} /&gt;</i>
+        `)
+      setPluginComponent2(`
+        <div style="
+          color: #024f29;
+          background-color: white;
+          font-weight: 400;
+          width: 250px;
+          height: 18px;
+          margin-bottom: 5px;
+          padding-left: 3px;
+          "
+        >
+          pod 'Hieroglyphs'
+        </div>
+        
+        <div style="background-color: white; width: 350px; height: 18px; color:#024f29;>
+          <i style="background-color: white; color: #024f29; font-style: normal; height: 18px;">
+            import Hieroglyphs
+          </i>
+          </br></br>
+          <i style="width: 450px; background-color: white; color: #024f29; font-style: normal; height: 18px;">
+            let icon = Hieroglyphs.${reactText}()
+          </i>
+        </div>
+        `)
+      setPluginComponent3(`
+        <div style="
+          color: #024f29;
+          background-color: white;
+          font-weight: 400;
+          width: 250px;
+          height: 18px;
+          margin-bottom: 5px;
+          padding-left: 3px;
+          "
+        >
+          npm install @hieroglyphs.io/vue
+        </div>
+        
+        <div style="background-color: white; width: 500px;">
+          <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 0px; padding-right: 3px;">
+          &lt;script setup&gt; <br/>
+          import { ${reactText} } from '@hieroglyphs.io/vue'; <br/>
+          &lt;/script setup&gt;
+          </i>
+        </div>
+        <div style="background-color: white; width: 500px; margin-top:3px;">
+        <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 0px; padding-right: 3px;">
+        &lt;template&gt; <br/>
+        &lt;${reactText}&gt; <br/>
+        &lt;/template&gt;
+        </i>
+      </div>
         `)
     };
 
@@ -179,17 +234,17 @@ function MainX({ items }) {
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 2 ? 'selected' : ''}`} 
-                        onClick={() => handleButtonClick(pluginComponent, 2)}>
+                        onClick={() => handleButtonClick(pluginComponent1, 2)}>
                           React
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 3 ? 'selected' : ''}`}
-                        onClick={() => handleButtonClick('Contenu du bouton 3', 3)}>
+                        onClick={() => handleButtonClick(pluginComponent2, 3)}>
                           Swift
                       </button>
                       <button 
                         className={`modal-placement-button-content ${selectedButton === 4 ? 'selected' : ''}`}
-                        onClick={() => handleButtonClick('Contenu du bouton 4', 4)}>
+                        onClick={() => handleButtonClick(pluginComponent3, 4)}>
                           Vue
                       </button>
                     </div>
