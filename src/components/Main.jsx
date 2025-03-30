@@ -34,19 +34,25 @@ function MainX({ items }) {
       const reactText = plugin ? plugin.plugin_component : "No plugin";
       setPluginComponent(`
         <div style="
-          color: white;
+          color: #024f29;
+          background-color: white;
           font-weight: 400;
+          width: 250px;
+          height: 18px;
+          margin-bottom: 5px;
+          padding-left: 3px;
           "
         >
           npm install @hieroglyphs.io/react
         </div>
-        <br/>
-        <i style="color: #AF75DD; font-style: normal;">import</i> <i style="color: white; font-style: normal;">React</i> <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: white; font-style: normal;">'react'</i>;
-        <br/>
-        <i style="color: #AF75DD; font-style: normal;">import</i> * <i style="color: #AF75DD; font-style: normal;">as</i> Hieroglyphs <i style="color: #AF75DD; font-style: normal;">from</i> <i style="color: white; font-style: normal;">'@hieroglyphs.io/react'</i>;
-        <br/>
-        <br/>
-        <i style="color: #D95752; font-style: normal;">&lt;Hieroglyphs.${reactText} /&gt;</i>
+        
+        <div style="background-color: white; width: 180px; height: 18px; padding-left: 3px;">
+          <i style="color: #024f29; font-style: normal;">import</i> <i style="color: #024f29; font-style: normal;">React</i> <i style="color: #024f29; font-style: normal;">from</i> <i style="color: #024f29; font-style: normal;">'react'</i>;
+        </div>
+        <div style="background-color: white; width: 380px; color: #024f29; margin-bottom: 5px; padding-left: 3px;">
+          <i style="color: #024f29; font-style: normal;">import</i> * <i style="color: #024f29; font-style: normal;">as</i> Hieroglyphs <i style="color: #024f29; font-style: normal;">from</i> <i style="color: #024f29; font-style: normal;">'@hieroglyphs.io/react'</i>;
+       </div>
+        <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 3px;">&lt;Hieroglyphs.${reactText} /&gt;</i>
         `)
     };
 
