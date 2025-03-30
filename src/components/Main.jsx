@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main.css'
 
 import Icon5 from './Icon5';
+import CopyButton from './CopyButton'
 
 import * as Hieroglyphs from '@hieroglyphs.io/react'
 
@@ -250,6 +251,7 @@ function MainX({ items }) {
                     </div>
                     <div className='modal-placement-el2-box2'>
                       <div dangerouslySetInnerHTML={{ __html: content }} />
+                      <CopyButton text="Mon texte à copier" />
                     </div>
                 </div>
                 <button className='modal-button' 

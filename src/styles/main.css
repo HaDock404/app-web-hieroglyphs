@@ -170,7 +170,7 @@
 }
 
 .modal-placement-el2-box2 {
-  width: calc(100% - 20px);
+  width: calc(100% - 100px);
   border: solid 0.5px #024f29;
   border-radius: 8px;
   margin-left: 20px;
@@ -179,5 +179,18 @@
   font-weight: bold;
   color: #ffffff;
   padding: 10px;
+  padding-right: 90px;
   background-color: #024f29;
+  position: relative;
+}
+
+.modal-placement-button-copy-content {
+  background-color: white;
+  color: #024f29;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
