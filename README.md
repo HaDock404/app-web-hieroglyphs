@@ -7,7 +7,7 @@
 - [ ] Créer page de contact
 - [X] Page d'erreur
 - [X] Favicon
-- [ ] Lien de partage
+- [X] Lien de partage
 - [ ] Achat nom de domaine
 - [ ] Vérifier mise en ligne (GCP ?)
 - [ ] Test création de police
