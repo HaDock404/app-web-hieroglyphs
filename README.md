@@ -6,7 +6,7 @@
 - [ ] Changer l'affichage unicode des lettres et de version
 - [ ] Créer page de contact
 - [ ] Page d'erreur
-- [ ] Favicon
+- [X] Favicon
 - [ ] Lien de partage
 - [ ] Achat nom de domaine
 - [ ] Vérifier mise en ligne (GCP ?)
