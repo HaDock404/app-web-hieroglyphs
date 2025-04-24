@@ -1,3 +1,4 @@
+/*
 .section_contact_page {
     width: calc(100% - 80px);
     padding-left: 30px;
@@ -9,8 +10,8 @@
     font-optical-sizing: auto;
     background-color: red;
 }
-
-.bg {
+*/
+.section_contact_page {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -36,8 +37,8 @@ label {
     color: #333;
 }
 
-input[type="text"],
-input[type="email"],
+#name,
+#email,
 textarea {
     width: 90%;
     padding: 10px;
@@ -52,8 +53,8 @@ textarea {
     resize: vertical;
 }
 
-input[type="submit"] {
-    background-color: #007bff;
+#submit {
+    background-color: #036635;
     color: #ffffff;
     border: none;
     padding: 12px;
@@ -63,8 +64,8 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+#submit:hover {
+    background-color: #025129;
 }
 
 .success-message {

@@ -4,7 +4,7 @@
 - [ ] Améliorer le design des modales 
 - [ ] Changer le menu déroulant de la barre de recherche
 - [ ] Changer l'affichage unicode des lettres et de version
-- [ ] Créer page de contact
+- [X] Créer page de contact
 - [X] Page d'erreur
 - [X] Favicon
 - [X] Lien de partage

@@ -28,26 +28,24 @@ function ContactPage() {
     return (
         <>
             <Header />
-            <section className='section_contact_page'>
-                <div className="bg">
-                    <div className="email-form-container">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <label htmlFor="name">Name</label>
-                            <input type="text" name="from_name" id="name" required />
+            <section className="section_contact_page">
+                <div className="email-form-container">
+                    <form ref={form} onSubmit={sendEmail}>
+                        <label htmlFor="name">Name</label>
+                        <input type="text" name="from_name" id="name" required />
 
-                            <label htmlFor="email">Email</label>
-                            <input type="email" name="from_email" id="email" required />
+                        <label htmlFor="email">Email</label>
+                        <input type="email" name="from_email" id="email" required />
 
-                            <label htmlFor="message">Message</label>
-                            <textarea name="message" id="message" required />
+                        <label htmlFor="message">Message</label>
+                        <textarea name="message" id="message" required />
 
-                            <input type="submit" value="Send" />
-                        </form>
+                        <input type="submit" value="Send Message" id="submit"/>
+                    </form>
 
-                        {/* Message de succès ou d'erreur */}
-                        {status === 'success' && <div className="success-message">Email sent successfully!</div>}
-                        {status === 'failed' && <div className="error-message">Failed to send email. Please try again later.</div>}
-                    </div>
+                    {/* Message de succès ou d'erreur */}
+                    {status === 'success' && <div className="success-message">Email sent successfully!</div>}
+                    {status === 'failed' && <div className="error-message">Failed to send email. Please try again later.</div>}
                 </div>
             </section>
         </>
