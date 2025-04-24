@@ -6,7 +6,7 @@ function UsefullLink() {
         <footer id="usefull_link">
             <Link className='usefull_link_style' to='/legal-notice'>Legal Notice</Link>
             <Link className='usefull_link_style' to='/terms-conditions'>Terms&Conditions</Link>
-            <Link className='usefull_link_style' to='/'>Contact</Link>
+            <Link className='usefull_link_style' to='/contact'>Contact</Link>
         </footer>
     )
 }

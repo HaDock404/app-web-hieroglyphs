@@ -16,6 +16,7 @@ import AboutUs from './pages/AboutUs.jsx';
 import LegalNotice from './pages/LegalNotice.jsx';
 import TermsConditions from './pages/TermsConditions.jsx';
 import ErrorPage from './components/ErrorPage';
+import ContactPage from './pages/ContactPage.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -27,6 +28,7 @@ root.render(
           <Route path="/about" element={<AboutUs />}/>
           <Route path="/legal-notice" element={<LegalNotice />}/>
           <Route path="/terms-conditions" element={<TermsConditions />}/>
+          <Route path="/contact" element={<ContactPage />}/>
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
