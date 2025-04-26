@@ -19,7 +19,7 @@ function Stickers() {
     return (
         <div id="main-container">
             <Header />
-            {/*<IntroSearch search={search} onSearchChange={handleSearchChange}/>*/}
+            <IntroSearch search={search} onSearchChange={handleSearchChange}/>
             {/*<Main items={filteredItems}/>*/}
         </div>
     )

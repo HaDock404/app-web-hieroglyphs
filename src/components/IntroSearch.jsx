@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '../styles/intro_search.css';
 import Icon3 from './Icon3.jsx';
 import video from '../assets/videos/video.mp4'
 
 function IntroSearch({ search, onSearchChange }) {
     const navigate = useNavigate();
+    const location = useLocation();
     const introSearchRef = useRef(null);
     const introSearchPart1BRef = useRef(null);
     const [isFixed, setIsFixed] = useState(false);
@@ -60,7 +61,20 @@ function IntroSearch({ search, onSearchChange }) {
         }
     };
 
-    const [selectValue, setSelectValue] = React.useState('');
+    const handleChange = (e) => {
+        const selectedValue = e.target.value;
+        navigate(`/${selectedValue.toLowerCase()}`);
+    };
+    
+      // Déterminer quelle option est active selon l'URL
+    const currentPath = location.pathname.split('/')[1];
+
+    const getPlaceholder = () => {
+        if (currentPath === 'stickers') return 'Search for stickers';
+        if (currentPath === 'animated') return 'Search for animated icons';
+        return 'Search for icons'; // par défaut
+    };
+ 
 
     return (
         <section
@@ -92,13 +106,9 @@ function IntroSearch({ search, onSearchChange }) {
                 >
                     <select 
                         id="intro_search_part1B_el1"
-                        value={selectValue}
-                        onChange={(e) => {
-                            const selectedValue = e.target.value;
-                            setSelectValue(selectedValue);
-                            navigate(`/${selectedValue.toLowerCase()}`);
-                        }}
-                    >
+                        value={currentPath}
+                        onChange={handleChange}
+                        >
                         <option value="">Icons</option>
                         <option value="stickers">Stickers</option>
                         <option value="animated">Animated</option>
@@ -106,7 +116,7 @@ function IntroSearch({ search, onSearchChange }) {
                     <input 
                         id="intro_search_part1B_el2" 
                         type="text" 
-                        placeholder="Search for icons"
+                        placeholder={getPlaceholder()}
                         value={inputValue}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyPress}
