@@ -12,6 +12,8 @@ import GlobalStyle from './styles/createGlobalStyle.jsx'
 import ScrollToTop from "./styles/ScrollToTop";
 
 import Homepage from './pages/Homepage';
+import Stickers from './pages/Stickers';
+import Animated from './pages/Animated';
 import AboutUs from './pages/AboutUs.jsx';
 import LegalNotice from './pages/LegalNotice.jsx';
 import TermsConditions from './pages/TermsConditions.jsx';
@@ -25,6 +27,8 @@ root.render(
     <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />}/>
+          <Route path="/stickers" element={<Stickers />}/>
+          <Route path="/animated" element={<Animated />}/>
           <Route path="/about" element={<AboutUs />}/>
           <Route path="/legal-notice" element={<LegalNotice />}/>
           <Route path="/terms-conditions" element={<TermsConditions />}/>

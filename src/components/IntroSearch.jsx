@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/intro_search.css';
 import Icon3 from './Icon3.jsx';
 import video from '../assets/videos/video.mp4'
 
 function IntroSearch({ search, onSearchChange }) {
+    const navigate = useNavigate();
     const introSearchRef = useRef(null);
     const introSearchPart1BRef = useRef(null);
     const [isFixed, setIsFixed] = useState(false);
@@ -58,6 +60,8 @@ function IntroSearch({ search, onSearchChange }) {
         }
     };
 
+    const [selectValue, setSelectValue] = React.useState('');
+
     return (
         <section
             id="intro_search"
@@ -86,10 +90,19 @@ function IntroSearch({ search, onSearchChange }) {
                         top: isFixed ? '88px' : 'auto',
                     }}
                 >
-                    <div id="intro_search_part1B_el1">
-                        <div>Regular</div>
-                        <div>▼</div>
-                    </div>
+                    <select 
+                        id="intro_search_part1B_el1"
+                        value={selectValue}
+                        onChange={(e) => {
+                            const selectedValue = e.target.value;
+                            setSelectValue(selectedValue);
+                            navigate(`/${selectedValue.toLowerCase()}`);
+                        }}
+                    >
+                        <option value="">Icons</option>
+                        <option value="stickers">Stickers</option>
+                        <option value="animated">Animated</option>
+                    </select>
                     <input 
                         id="intro_search_part1B_el2" 
                         type="text" 
