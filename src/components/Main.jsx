@@ -8,7 +8,7 @@ import * as Hieroglyphs from '@hieroglyphs.io/react'
 
 import pluginsData from '../data/plugin-list.json';
 
-function MainX({ items }) {
+function Main({ items }) {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
@@ -283,4 +283,4 @@ function MainX({ items }) {
       
 }
 
-export default MainX
+export default Main
