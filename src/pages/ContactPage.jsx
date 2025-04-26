@@ -28,6 +28,9 @@ function ContactPage() {
     return (
         <>
             <Header />
+            <section className="section_contact_page_title">
+                Feel free to reach out to us on any topic — we would be delighted to connect and chat with you.
+            </section>
             <section className="section_contact_page">
                 <div className="email-form-container">
                     <form ref={form} onSubmit={sendEmail}>
