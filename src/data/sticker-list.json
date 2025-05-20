@@ -1,0 +1,302 @@
+[
+  {
+    "id": "p0000",
+    "plugin_component": "ArrowBendDownLeft",
+    "plugin_name": "arrow-bend-down-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "down", "left"]
+  }
+,
+  {
+    "id": "p0001",
+    "plugin_component": "ArrowBendDownRight",
+    "plugin_name": "arrow-bend-down-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "down", "right"]
+  }
+,
+  {
+    "id": "p0002",
+    "plugin_component": "ArrowBendLeftDown",
+    "plugin_name": "arrow-bend-left-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "down", "left"]
+  }
+,
+  {
+    "id": "p0003",
+    "plugin_component": "ArrowBendLeftUp",
+    "plugin_name": "arrow-bend-left-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "up", "left"]
+  }
+,
+  {
+    "id": "p0004",
+    "plugin_component": "ArrowBendRightDown",
+    "plugin_name": "arrow-bend-right-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "down", "right"]
+  }
+,
+  {
+    "id": "p0005",
+    "plugin_component": "ArrowBendRightUp",
+    "plugin_name": "arrow-bend-right-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "up", "right"]
+  }
+,
+  {
+    "id": "p0006",
+    "plugin_component": "ArrowBendUpLeft",
+    "plugin_name": "arrow-bend-up-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "up", "left"]
+  }
+,
+  {
+    "id": "p0007",
+    "plugin_component": "ArrowBendUpRight",
+    "plugin_name": "arrow-bend-up-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "bend", "up", "right"]
+  }
+,
+  {
+    "id": "p0008",
+    "plugin_component": "ArrowCircleBendDoubleDownLeft",
+    "plugin_name": "arrow-circle-bend-double-down-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "down", "left"]
+  }
+,
+  {
+    "id": "p0009",
+    "plugin_component": "ArrowCircleBendDoubleDownRight",
+    "plugin_name": "arrow-circle-bend-double-down-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "down", "right"]
+  }
+,
+  {
+    "id": "p0010",
+    "plugin_component": "ArrowCircleBendDoubleLeftDown",
+    "plugin_name": "arrow-circle-bend-double-left-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "down", "left"]
+  }
+,
+  {
+    "id": "p0011",
+    "plugin_component": "ArrowCircleBendDoubleLeftUp",
+    "plugin_name": "arrow-circle-bend-double-left-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "up", "left"]
+  }
+,
+  {
+    "id": "p0012",
+    "plugin_component": "ArrowCircleBendDoubleRightDown",
+    "plugin_name": "arrow-circle-bend-double-right-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "down", "right"]
+  }
+,
+  {
+    "id": "p0013",
+    "plugin_component": "ArrowCircleBendDoubleRightUp",
+    "plugin_name": "arrow-circle-bend-double-right-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "up", "right"]
+  }
+,
+  {
+    "id": "p0014",
+    "plugin_component": "ArrowCircleBendDoubleUpLeft",
+    "plugin_name": "arrow-circle-bend-double-up-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "up", "left"]
+  }
+,
+  {
+    "id": "p0015",
+    "plugin_component": "ArrowCircleBendDoubleUpRight",
+    "plugin_name": "arrow-circle-bend-double-up-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "double", "up", "right"]
+  }
+,
+  {
+    "id": "p0016",
+    "plugin_component": "ArrowCircleBendDownLeft",
+    "plugin_name": "arrow-circle-bend-down-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "down", "left"]
+  }
+,
+  {
+    "id": "p0017",
+    "plugin_component": "ArrowCircleBendDownRight",
+    "plugin_name": "arrow-circle-bend-down-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "down", "right"]
+  }
+,
+  {
+    "id": "p0018",
+    "plugin_component": "ArrowCircleBendLeftDown",
+    "plugin_name": "arrow-circle-bend-left-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "down", "left"]
+  }
+,
+  {
+    "id": "p0019",
+    "plugin_component": "ArrowCircleBendLeftUp",
+    "plugin_name": "arrow-circle-bend-left-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "up", "left"]
+  }
+,
+  {
+    "id": "p0020",
+    "plugin_component": "ArrowCircleBendRightDown",
+    "plugin_name": "arrow-circle-bend-right-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "down", "right"]
+  }
+,
+  {
+    "id": "p0021",
+    "plugin_component": "ArrowCircleBendRightUp",
+    "plugin_name": "arrow-circle-bend-right-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "up", "right"]
+  }
+,
+  {
+    "id": "p0022",
+    "plugin_component": "ArrowCircleBendUpLeft",
+    "plugin_name": "arrow-circle-bend-up-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "up", "left"]
+  }
+,
+  {
+    "id": "p0023",
+    "plugin_component": "ArrowCircleBendUpRight",
+    "plugin_name": "arrow-circle-bend-up-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "bend", "up", "right"]
+  }
+,
+  {
+    "id": "p0024",
+    "plugin_component": "ArrowCircleDoubleDownLeft",
+    "plugin_name": "arrow-circle-double-down-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "down", "left"]
+  }
+,
+  {
+    "id": "p0025",
+    "plugin_component": "ArrowCircleDoubleDownRight",
+    "plugin_name": "arrow-circle-double-down-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "down", "right"]
+  }
+,
+  {
+    "id": "p0026",
+    "plugin_component": "ArrowCircleDoubleDown",
+    "plugin_name": "arrow-circle-double-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "down"]
+  }
+,
+  {
+    "id": "p0027",
+    "plugin_component": "ArrowCircleDoubleLeft",
+    "plugin_name": "arrow-circle-double-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "left"]
+  }
+,
+  {
+    "id": "p0028",
+    "plugin_component": "ArrowCircleDoubleRight",
+    "plugin_name": "arrow-circle-double-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "right"]
+  }
+,
+  {
+    "id": "p0029",
+    "plugin_component": "ArrowCircleDoubleUpLeft",
+    "plugin_name": "arrow-circle-double-up-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "up", "left"]
+  }
+,
+  {
+    "id": "p0030",
+    "plugin_component": "ArrowCircleDoubleUpRight",
+    "plugin_name": "arrow-circle-double-up-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "up", "right"]
+  }
+,
+  {
+    "id": "p0031",
+    "plugin_component": "ArrowCircleDoubleUp",
+    "plugin_name": "arrow-circle-double-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "double", "up"]
+  }
+,
+  {
+    "id": "p0032",
+    "plugin_component": "ArrowCircleDownLeft",
+    "plugin_name": "arrow-circle-down-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "down", "left"]
+  }
+,
+  {
+    "id": "p0033",
+    "plugin_component": "ArrowCircleDownRight",
+    "plugin_name": "arrow-circle-down-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "down", "right"]
+  }
+,
+  {
+    "id": "p0034",
+    "plugin_component": "ArrowCircleDown",
+    "plugin_name": "arrow-circle-down",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "down"]
+  }
+,
+  {
+    "id": "p0035",
+    "plugin_component": "ArrowCircleLeft",
+    "plugin_name": "arrow-circle-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "left"]
+  }
+,
+  {
+    "id": "p0036",
+    "plugin_component": "ArrowCircleRight",
+    "plugin_name": "arrow-circle-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "right"]
+  }
+,
+  {
+    "id": "p0037",
+    "plugin_component": "ArrowCircleUpLeft",
+    "plugin_name": "arrow-circle-up-left",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "up", "left"]
+  }
+,
+  {
+    "id": "p0038",
+    "plugin_component": "ArrowCircleUpRight",
+    "plugin_name": "arrow-circle-up-right",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "up", "right"]
+  }
+,
+  {
+    "id": "p0039",
+    "plugin_component": "ArrowCircleUp",
+    "plugin_name": "arrow-circle-up",
+    "tags": ["directional", "pointer", "pointing", "arrowhead", "arrows", "arrow", "circle", "up"]
+  }
+,
+  {
+    "id": "p0040",
+    "plugin_component": "MinusCircle",
+    "plugin_name": "minus-circle",
+    "tags": ["-", "substraction", "difference", "mathematics", "arithmetic", "calculator", "round", "technology & development", "finances", "system", "minus", "circle", "dash"]
+  }
+,
+  {
+    "id": "p0041",
+    "plugin_component": "PlusCircle",
+    "plugin_name": "plus-circle",
+    "tags": ["+", "addition", "sum", "mathematics", "arithmetic", "calculator", "round", "technology & development", "finances", "system", "plus", "circle", "dash"]
+  }
+,
+  {
+    "id": "p0042",
+    "plugin_component": "XCircle",
+    "plugin_name": "x-circle",
+    "tags": ["x", "multiplication", "close", "closed", "cancelled", "dismissed", "round", "technology & development", "finances", "system", "circle", "dash"]
+  }
+]

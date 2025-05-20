@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import pluginsData from '../data/plugin-list.json';
+import pluginsData from '../data/sticker-list.json';
 
 import Header from "../components/Header"
 import IntroSearch from "../components/IntroSearch"
-import Main from "../components/Main"
+import MainStickers from "../components/MainStickers"
 
 function Stickers() {
     const sortedPlugins = [...pluginsData].sort((a, b) => a.plugin_name.localeCompare(b.plugin_name));
@@ -20,7 +20,7 @@ function Stickers() {
         <div id="main-container">
             <Header />
             <IntroSearch search={search} onSearchChange={handleSearchChange}/>
-            {/*<Main items={filteredItems}/>*/}
+            <MainStickers items={filteredItems}/>
         </div>
     )
 }
