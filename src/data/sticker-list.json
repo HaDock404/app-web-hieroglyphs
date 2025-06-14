@@ -1,44 +1,356 @@
 [
   {
     "id": "s0000",
-    "sticker_name": "AprilSticker",
+    "sticker_name": "April",
     "sticker_path": "https://storage.googleapis.com/hieroglyphs/april.png",
-    "tags": ["month", "season", "spring"]
+    "tags": ["month", "season", "spring", "april"]
   },
   {
     "id": "s0001",
-    "sticker_name": "AugustSticker",
+    "sticker_name": "August",
     "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
-    "tags": ["month", "season", "summer"]
+    "tags": ["month", "season", "summer", "august"]
   },
   {
     "id": "s0002",
-    "sticker_name": "AugustSticker",
-    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
-    "tags": ["month", "season", "summer"]
+    "sticker_name": "Bath",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/bath.png",
+    "tags": ["bath", "life", "woman", "women"]
   },
   {
     "id": "s0003",
-    "sticker_name": "AugustSticker",
-    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
-    "tags": ["month", "season", "summer"]
+    "sticker_name": "Bear",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/bear.png",
+    "tags": ["animal", "bear", "nature", "christmas",  "pet"]
   },
   {
     "id": "s0004",
-    "sticker_name": "AugustSticker",
-    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
-    "tags": ["month", "season", "summer"]
+    "sticker_name": "Cat",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/cat.png",
+    "tags": ["animal", "cat", "nature", "christmas",  "pet"]
   },
   {
     "id": "s0005",
-    "sticker_name": "AugustSticker",
-    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
-    "tags": ["month", "season", "summer"]
+    "sticker_name": "Chatting",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/chatting.png",
+    "tags": ["chatting", "working", "computer", "macbook", "man", "men"]
   },
   {
     "id": "s0006",
-    "sticker_name": "AugustSticker",
-    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "sticker_name": "Coffee Time",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/coffee-time.png",
+    "tags": ["coffee", "sit", "woman", "women", "working", "break", "time"]
+  },
+  {
+    "id": "s0007",
+    "sticker_name": "Cow",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/cow.png",
+    "tags": ["animal", "cow", "nature", "pet"]
+  },
+  {
+    "id": "s0008",
+    "sticker_name": "Crocodile",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/crocodile.png",
+    "tags": ["animal", "pet", "crocodile", "nature"]
+  },
+  {
+    "id": "s0009",
+    "sticker_name": "December",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/december.png",
+    "tags": ["month", "season", "winter", "december"]
+  },
+  {
+    "id": "s0010",
+    "sticker_name": "Drinking",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/drinking.png",
+    "tags": ["drink", "drinking", "woman", "women", "sit", "break", "working"]
+  },
+  {
+    "id": "s0011",
+    "sticker_name": "Dumbbell",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/dumbbell.png",
+    "tags": ["dumbbell", "sport", "man", "men"]
+  },
+  {
+    "id": "s0012",
+    "sticker_name": "Elephant",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/elephant.png",
+    "tags": ["animal", "pet", "elephant", "nature"]
+  },
+  {
+    "id": "s0013",
+    "sticker_name": "Elf",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/elf.png",
+    "tags": ["elf", "christmas", "gift", "irish", "gifts"]
+  },
+  {
+    "id": "s0014",
+    "sticker_name": "February",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/february.png",
+    "tags": ["month", "season", "winter", "february"]
+  },
+  {
+    "id": "s0015",
+    "sticker_name": "Fox",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/fox.png",
+    "tags": ["animal", "pet", "fox", "nature", "christmas", "gift"]
+  },
+  {
+    "id": "s0016",
+    "sticker_name": "Friday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/friday.png",
+    "tags": ["day", "planning", "week", "friday"]
+  },
+  {
+    "id": "s0017",
+    "sticker_name": "Guitar",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/guitar.png",
+    "tags": ["Guitar", "music", "instrument", "man", "men", "playing"]
+  },
+  {
+    "id": "s0018",
+    "sticker_name": "Hippopotamus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/hippopotamus.png",
+    "tags": ["animal", "pet", "hippopotamus", "nature"]
+  },
+  {
+    "id": "s0019",
+    "sticker_name": "Horse",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/horse.png",
+    "tags": ["animal", "pet", "horse", "nature"]
+  },
+  {
+    "id": "s0020",
+    "sticker_name": "January",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/january.png",
+    "tags": ["month", "season", "winter", "january"]
+  },
+  {
+    "id": "s0021",
+    "sticker_name": "July",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/july.png",
+    "tags": ["month", "season", "summer", "july"]
+  },
+  {
+    "id": "s0022",
+    "sticker_name": "June",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/june.png",
+    "tags": ["month", "season", "summer", "june"]
+  },
+  {
+    "id": "s0023",
+    "sticker_name": "Laptop",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/laptop.png",
+    "tags": ["laptop", "working", "computer", "man", "men", "browsing"]
+  },
+  {
+    "id": "s0024",
+    "sticker_name": "Listening",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/listening.png",
+    "tags": ["listening", "music", "break", "women", "woman"]
+  },
+  {
+    "id": "s0025",
+    "sticker_name": "Listenin",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/listening1.png",
+    "tags": ["listening", "music", "break", "man", "men"]
+  },
+  {
+    "id": "s0026",
+    "sticker_name": "March",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/march.png",
+    "tags": ["month", "season", "spring", "march"]
+  },
+  {
+    "id": "s0027",
+    "sticker_name": "May",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/may.png",
+    "tags": ["month", "season", "spring", "may"]
+  },
+  {
+    "id": "s0028",
+    "sticker_name": "Monday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/monday.png",
+    "tags": ["monday", "day", "planning", "week"]
+  },
+  {
+    "id": "s0029",
+    "sticker_name": "November",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/november.png",
+    "tags": ["month", "season", "autumn", "november"]
+  },
+  {
+    "id": "s0030",
+    "sticker_name": "October",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/october.png",
+    "tags": ["month", "season", "autumn", "october"]
+  },
+  {
+    "id": "s0031",
+    "sticker_name": "Online Training",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/online-training.png",
+    "tags": ["online", "computer", "training", "laptop", "woman", "women"]
+  },
+  {
+    "id": "s0032",
+    "sticker_name": "Panda Bear",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/panda-bear.png",
+    "tags": ["panda bear", "animal", "pet", "nature"]
+  },
+  {
+    "id": "s0033",
+    "sticker_name": "Pig",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/pig.png",
+    "tags": ["pig", "animal", "pet", "nature"]
+  },
+  {
+    "id": "s0034",
+    "sticker_name": "Play With Pet",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/play-with-pet.png",
+    "tags": ["play with pet", "animal", "pet", "nature", "playing", "cat", "woman", "women"]
+  },
+  {
+    "id": "s0035",
+    "sticker_name": "Reading",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/reading.png",
+    "tags": ["reading", "activity", "activities", "sit", "break", "man", "men"]
+  },
+  {
+    "id": "s0036",
+    "sticker_name": "Reading",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/reading1.png",
+    "tags": ["reading", "activity", "activities", "sit", "break", "woman", "women"]
+  },
+  {
+    "id": "s0037",
+    "sticker_name": "Reindeer",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/reindeer.png",
+    "tags": ["reindeer", "animal", "pet", "nature", "christmas", "gift", "gifts"]
+  },
+  {
+    "id": "s0038",
+    "sticker_name": "Santa Claus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/santa-claus.png",
+    "tags": ["santa", "santa claus", "claus", "animal", "pet", "nature", "christmas", "gift", "gifts"]
+  },
+  {
+    "id": "s0039",
+    "sticker_name": "Santa Claus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/santa-claus1.png",
+    "tags": ["santa", "santa claus", "claus", "animal", "pet", "nature", "christmas", "gift", "gifts", "merry christmas"]
+  },
+  {
+    "id": "s0040",
+    "sticker_name": "Santa Claus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/santa-claus2.png",
+    "tags": ["santa", "santa claus", "claus", "animal", "pet", "nature", "christmas", "gift", "gifts", "santa tree", "pin", "tree"]
+  },
+  {
+    "id": "s0041",
+    "sticker_name": "Santa Claus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/santa-claus3.png",
+    "tags": ["santa", "santa claus", "claus", "animal", "pet", "nature", "christmas", "gift", "gifts", "happy moment"]
+  },
+  {
+    "id": "s0042",
+    "sticker_name": "Santa Claus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/santa-claus4.png",
+    "tags": ["santa", "santa claus", "claus", "animal", "pet", "nature", "christmas", "gift", "gifts", "salute"]
+  },
+  {
+    "id": "s0043",
+    "sticker_name": "Santa Claus",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/santa-claus5.png",
+    "tags": ["santa", "santa claus", "claus", "animal", "pet", "nature", "christmas", "gift", "gifts", "happy"]
+  },
+  {
+    "id": "s0044",
+    "sticker_name": "Saturday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/saturday.png",
+    "tags": ["day", "planning", "week", "saturday"]
+  },
+  {
+    "id": "s0045",
+    "sticker_name": "September",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/september.png",
+    "tags": ["month", "season", "autumn", "september"]
+  },
+  {
+    "id": "s0046",
+    "sticker_name": "Sheep",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/sheep.png",
+    "tags": ["sheep", "animal", "pet", "nature"]
+  },
+  {
+    "id": "s0047",
+    "sticker_name": "Spring",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/spring.png",
+    "tags": ["month", "season", "spring"]
+  },
+  {
+    "id": "s0048",
+    "sticker_name": "Stay At Home",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/stay-at-home.png",
+    "tags": ["home", "break", "pause", "man", "men", "chilling", "phone"]
+  },
+  {
+    "id": "s0049",
+    "sticker_name": "Summer",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/summer.png",
     "tags": ["month", "season", "summer"]
+  },
+  {
+    "id": "s0050",
+    "sticker_name": "Sunday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/sunday.png",
+    "tags": ["day", "planning", "week", "sunday"]
+  },
+  {
+    "id": "s0051",
+    "sticker_name": "Tea Time",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/tea-time.png",
+    "tags": ["tea", "tea time", "break", "man", "men", "sit"]
+  },
+  {
+    "id": "s0052",
+    "sticker_name": "Thursday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/thursday.png",
+    "tags": ["day", "planning", "week", "thursday"]
+  },
+  {
+    "id": "s0053",
+    "sticker_name": "Tuesday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/tuesday.png",
+    "tags": ["day", "planning", "week", "tuesday"]
+  },
+  {
+    "id": "s0054",
+    "sticker_name": "Video Calling",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/video-calling.png",
+    "tags": ["video", "calling", "video calling", "laptop", "computer", "working", "man", "men"]
+  },
+  {
+    "id": "s0055",
+    "sticker_name": "Video Calling",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/video-calling1.png",
+    "tags": ["video", "calling", "video calling", "laptop", "computer", "working", "woman", "women"]
+  },
+  {
+    "id": "s0056",
+    "sticker_name": "Watering Plants",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/watering-plants.png",
+    "tags": ["watering", "watering plants", "plant", "nature", "man", "men"]
+  },
+  {
+    "id": "s0057",
+    "sticker_name": "Wednesday",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/wednesday.png",
+    "tags": ["day", "planning", "week", "wednesday"]
+  },
+  {
+    "id": "s0058",
+    "sticker_name": "Winter",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/winter.png",
+    "tags": ["month", "season", "winter"]
   }
 ]
