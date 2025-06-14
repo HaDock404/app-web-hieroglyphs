@@ -6,7 +6,7 @@ import IntroSearch from "../components/IntroSearch"
 import MainStickers from "../components/MainStickers"
 
 function Stickers() {
-    const sortedPlugins = [...pluginsData].sort((a, b) => a.plugin_name.localeCompare(b.plugin_name));
+    const sortedPlugins = [...pluginsData].sort((a, b) => a.sticker_name.localeCompare(b.sticker_name));
     const [search, setSearch] = useState('');
     const handleSearchChange = (value) => {
         setSearch(value.toLowerCase());

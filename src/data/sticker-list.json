@@ -2,7 +2,43 @@
   {
     "id": "s0000",
     "sticker_name": "AprilSticker",
-    "sticker_path": "/assets/stickers/april.png",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/april.png",
     "tags": ["month", "season", "spring"]
+  },
+  {
+    "id": "s0001",
+    "sticker_name": "AugustSticker",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "tags": ["month", "season", "summer"]
+  },
+  {
+    "id": "s0002",
+    "sticker_name": "AugustSticker",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "tags": ["month", "season", "summer"]
+  },
+  {
+    "id": "s0003",
+    "sticker_name": "AugustSticker",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "tags": ["month", "season", "summer"]
+  },
+  {
+    "id": "s0004",
+    "sticker_name": "AugustSticker",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "tags": ["month", "season", "summer"]
+  },
+  {
+    "id": "s0005",
+    "sticker_name": "AugustSticker",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "tags": ["month", "season", "summer"]
+  },
+  {
+    "id": "s0006",
+    "sticker_name": "AugustSticker",
+    "sticker_path": "https://storage.googleapis.com/hieroglyphs/august.png",
+    "tags": ["month", "season", "summer"]
   }
 ]
