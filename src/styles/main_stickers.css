@@ -137,14 +137,31 @@
   height: 100px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-
+/*
 .modal-placement-el1-box1-icon-stickers {
   height: calc(100% - 40px);
-  padding: 20px;
+  padding: 0px;
   width: calc(40% - 40px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  overflow: hidden;
+  position: relative;
 }
 
+.modal-placement-el1-box1-icon-stickers img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+*/
 .modal-placement-el1-box1-name-stickers {
   display: flex;
   flex-direction: row;
@@ -158,6 +175,20 @@
 .icon-container-stickers {
   width: 100%;
   height: 100%;
+}
+
+.img-modal-stickers {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-modal-stickers img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;         
 }
 
 .modal-placement-el1-box2-stickers {

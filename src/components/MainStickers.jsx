@@ -11,7 +11,6 @@ function MainStickers({ items }) {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPlugin, setSelectedPlugin] = useState(null);
-    const [content, setContent] = useState("test ouverture");
 
     const [selectedButton, setSelectedButton] = useState(1);
     const [Copy, setCopy] = useState("")
@@ -125,17 +124,17 @@ function MainStickers({ items }) {
               <div className='modal-placement-stickers'>
                 <div className='modal-placement-el1-stickers'>
                   <div className='modal-placement-el1-box1-stickers'>
-                    <div className='modal-placement-el1-box1-icon-stickers'>
                       {SelectedIcon ? (
-                      <div className="icon-container-stickers">
-                        <img src={SelectedIcon} alt="" />
-                      </div>
+                        <div className='img-modal-stickers'>
+                          <img src={SelectedIcon} alt="" />
+                        </div>
+                      
                         ) : (
                       <p>/error</p>
                     )}
-                    </div>
+                    
                     <div className='modal-placement-el1-box1-name-stickers'>
-                      
+                      {selectedPlugin}
                     </div>
                   </div>
                   <div className='modal-placement-el1-box2-stickers'>
@@ -147,18 +146,16 @@ function MainStickers({ items }) {
                       
                       
                       
-                      
                     </div>
                     <div className='modal-placement-el2-box2-stickers'>
-                      <div dangerouslySetInnerHTML={{ __html: content }} />
+                      test
+                      
                       <CopyButton text={Copy} />
                     </div>
                 </div>
                 <button className='modal-button-stickers' 
                   onClick={() => {
-                    setIsModalOpen(false);
-                    setContent("test ouverture")
-                  }}
+                    setIsModalOpen(false);}}
                 >
                   <Icon5 />
                 </button>
