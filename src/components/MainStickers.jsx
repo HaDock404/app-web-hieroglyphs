@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main_stickers.css'
 
 import Icon5 from './Icon5';
-import CopyButton from './CopyButton'
+import DownloadButton from './DownloadButton'
 
 function MainStickers({ items }) {
     const mainRef = useRef(null);
@@ -150,7 +150,7 @@ function MainStickers({ items }) {
                     <div className='modal-placement-el2-box2-stickers'>
                       test
                       
-                      <CopyButton text={Copy} />
+                      <DownloadButton link={SelectedIcon} name={selectedPlugin}/>
                     </div>
                 </div>
                 <button className='modal-button-stickers' 
