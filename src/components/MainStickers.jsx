@@ -116,45 +116,45 @@ function MainStickers({ items }) {
 
         {/* Modale */}
         {isModalOpen && (
-          <div className="modal-overlay" 
+          <div className="modal-overlay-stickers" 
             onClick={() => {
               setIsModalOpen(false);
             }}
           >
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <div className='modal-placement'>
-                <div className='modal-placement-el1'>
-                  <div className='modal-placement-el1-box1'>
-                    <div className='modal-placement-el1-box1-icon'>
+            <div className="modal-content-stickers" onClick={(e) => e.stopPropagation()}>
+              <div className='modal-placement-stickers'>
+                <div className='modal-placement-el1-stickers'>
+                  <div className='modal-placement-el1-box1-stickers'>
+                    <div className='modal-placement-el1-box1-icon-stickers'>
                       {SelectedIcon ? (
-                      <div className="icon-container">
+                      <div className="icon-container-stickers">
                         <img src={SelectedIcon} alt="" />
                       </div>
                         ) : (
                       <p>/error</p>
                     )}
                     </div>
-                    <div className='modal-placement-el1-box1-name'>
+                    <div className='modal-placement-el1-box1-name-stickers'>
                       
                     </div>
                   </div>
-                  <div className='modal-placement-el1-box2'>
+                  <div className='modal-placement-el1-box2-stickers'>
                     available in V1.0+ <br/>
                   </div>
                 </div>
-                <div className='modal-placement-el2'>
-                    <div className='modal-placement-el2-box1'>
+                <div className='modal-placement-el2-stickers'>
+                    <div className='modal-placement-el2-box1-stickers'>
                       
                       
                       
                       
                     </div>
-                    <div className='modal-placement-el2-box2'>
+                    <div className='modal-placement-el2-box2-stickers'>
                       <div dangerouslySetInnerHTML={{ __html: content }} />
                       <CopyButton text={Copy} />
                     </div>
                 </div>
-                <button className='modal-button' 
+                <button className='modal-button-stickers' 
                   onClick={() => {
                     setIsModalOpen(false);
                     setContent("test ouverture")

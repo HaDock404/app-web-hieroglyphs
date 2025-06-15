@@ -76,7 +76,7 @@
 
 
 
-.modal-overlay {
+.modal-overlay-stickers {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -87,7 +87,7 @@
     justify-content: center;
     z-index: 1000;
   }
-  .modal-content {
+  .modal-content-stickers {
     background: white;
     padding: 0px;
     border-radius: 8px;
@@ -101,7 +101,7 @@
     height: 200px;
   }
 
-  .modal-placement {
+  .modal-placement-stickers {
     width: 100%;
     height: 100%;
     position: relative;
@@ -109,7 +109,7 @@
     flex-direction: row;
   }
 
-  .modal-button {
+  .modal-button-stickers {
     position: absolute;
     top: -12.5px;
     right: -12.5px;
@@ -126,26 +126,26 @@
     padding: 0;
   }
 
-  .modal-placement-el1 {
+  .modal-placement-el1-stickers {
     width: 320px;
     height: calc(100% - 40px);
     margin: 20px;
   }
 
-.modal-placement-el1-box1 {
+.modal-placement-el1-box1-stickers {
   width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
 }
 
-.modal-placement-el1-box1-icon {
+.modal-placement-el1-box1-icon-stickers {
   height: calc(100% - 40px);
   padding: 20px;
   width: calc(40% - 40px);
 }
 
-.modal-placement-el1-box1-name {
+.modal-placement-el1-box1-name-stickers {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -155,18 +155,18 @@
   width: 50%;
 }
 
-.icon-container {
+.icon-container-stickers {
   width: 100%;
   height: 100%;
 }
 
-.modal-placement-el1-box2 {
+.modal-placement-el1-box2-stickers {
 
   font-size: 12px;
   color: #656461;
 }
 
-.modal-placement-el2 {
+.modal-placement-el2-stickers {
   width: 100%;
   height: calc(100% - 40px);
   margin: 20px;
@@ -174,14 +174,14 @@
   flex-direction: row;
 }
 
-.modal-placement-el2-box1 {
+.modal-placement-el2-box1-stickers {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.modal-placement-button-content {
+.modal-placement-button-content-stickers {
   background-color: white;
   color: #024f29;
   border: solid 0.5px #024f29;
@@ -193,12 +193,12 @@
   cursor: pointer;
 }
 
-.modal-placement-button-content.selected {
+.modal-placement-button-content-stickers.selected {
   background-color: #024f29;
   color: white;
 }
 
-.modal-placement-el2-box2 {
+.modal-placement-el2-box2-stickers {
   width: calc(100% - 100px);
   border: solid 0.5px #024f29;
   border-radius: 8px;
@@ -213,7 +213,7 @@
   position: relative;
 }
 
-.modal-placement-button-copy-content {
+.modal-placement-button-copy-content-stickers {
   background-color: white;
   color: #024f29;
   position: absolute;
