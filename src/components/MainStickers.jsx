@@ -3,6 +3,7 @@ import '../styles/main_stickers.css'
 
 import Icon5 from './Icon5';
 import DownloadButton from './DownloadButton'
+import CopyingImgButton from './CopyingImgButton'
 
 function MainStickers({ items }) {
     const mainRef = useRef(null);
@@ -151,6 +152,7 @@ function MainStickers({ items }) {
                       test
                       
                       <DownloadButton link={SelectedIcon} name={selectedPlugin}/>
+                      <CopyingImgButton link={SelectedIcon} name={selectedPlugin}/>
                     </div>
                 </div>
                 <button className='modal-button-stickers' 

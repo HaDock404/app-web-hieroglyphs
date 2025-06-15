@@ -249,6 +249,17 @@
   color: #024f29;
   position: absolute;
   right: 10px;
+  top: 35px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.modal-placement-button-copying-img-content-stickers {
+  background-color: white;
+  color: #024f29;
+  position: absolute;
+  right: 10px;
   top: 10px;
   border: none;
   border-radius: 20px;
