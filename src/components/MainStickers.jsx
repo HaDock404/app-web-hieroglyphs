@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../styles/main.css'
+import '../styles/main_stickers.css'
 
-function Main({ items }) {
+function MainStickers({ items }) {
     const mainRef = useRef(null);
     const [isUp, setIsUp] = useState(false);
     const [isSmallMain, setIsSmallMain] = useState(window.innerWidth < 739);
@@ -40,13 +40,13 @@ function Main({ items }) {
     return (
       <>
         <section
-          id="main"
+          id="main-stickers"
           ref={mainRef}
           style={{
             marginTop: isUp ? (isSmallMain ? "710px" : "380px") : "0px",
           }}
         >
-          <section id="container-box">
+          <section id="container-box-stickers">
             {items.length > 0 ? (
               items.map(({ id, sticker_name, sticker_path }) => {
                 const imagePath = sticker_path;
@@ -57,18 +57,19 @@ function Main({ items }) {
   
                 return (
                   <div
-                    className="box-main"
+                    className="box-main-stickers"
                     key={id}
                     onClick={() => console.log("ok")}
                   >
-                    <div className="box-main-el1">
+                    <div className="box-main-el1-stickers">
                       <img
+                      className='img-stickers'
                         src={imagePath}
                         alt={sticker_name}
                         style={{ width: '80px', height: '80px', objectFit: 'contain' }}
                       />
                     </div>
-                    <div className="box-main-el2">{sticker_name}</div>
+                    <div className="box-main-el2-stickers">{sticker_name}</div>
                   </div>
                 );
               })
@@ -91,4 +92,4 @@ function Main({ items }) {
       
 }
 
-export default Main
+export default MainStickers
