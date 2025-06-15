@@ -16,8 +16,13 @@ function MainStickers({ items }) {
     const [selectedButton, setSelectedButton] = useState(1);
     const [Copy, setCopy] = useState("")
 
+
+    const [selectedPluginX, setSelectedPluginX] = useState(null);
+    const SelectedIcon = selectedPluginX ? selectedPluginX : null;
+
     const openModal = (sticker_name, sticker_path) => {
       setSelectedPlugin(sticker_name);
+      setSelectedPluginX(sticker_path)
       setIsModalOpen(true);
       setSelectedButton(1);
     };
@@ -121,7 +126,13 @@ function MainStickers({ items }) {
                 <div className='modal-placement-el1'>
                   <div className='modal-placement-el1-box1'>
                     <div className='modal-placement-el1-box1-icon'>
-                      
+                      {SelectedIcon ? (
+                      <div className="icon-container">
+                        <img src={SelectedIcon} alt="" />
+                      </div>
+                        ) : (
+                      <p>/error</p>
+                    )}
                     </div>
                     <div className='modal-placement-el1-box1-name'>
                       
@@ -129,7 +140,6 @@ function MainStickers({ items }) {
                   </div>
                   <div className='modal-placement-el1-box2'>
                     available in V1.0+ <br/>
-                    U+EB14
                   </div>
                 </div>
                 <div className='modal-placement-el2'>
