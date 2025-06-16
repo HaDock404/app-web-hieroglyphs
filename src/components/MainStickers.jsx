@@ -4,6 +4,7 @@ import '../styles/main_stickers.css'
 import Icon5 from './Icon5';
 import DownloadButton from './DownloadButton'
 import CopyingImgButton from './CopyingImgButton'
+import SocialCopyButton from './SocialCopyButton';
 
 function MainStickers({ items }) {
     const mainRef = useRef(null);
@@ -12,11 +13,6 @@ function MainStickers({ items }) {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedPlugin, setSelectedPlugin] = useState(null);
-
-    const [selectedButton, setSelectedButton] = useState(1);
-    const [Copy, setCopy] = useState("")
-
-
     const [selectedPluginX, setSelectedPluginX] = useState(null);
     const SelectedIcon = selectedPluginX ? selectedPluginX : null;
 
@@ -24,10 +20,8 @@ function MainStickers({ items }) {
       setSelectedPlugin(sticker_name);
       setSelectedPluginX(sticker_path)
       setIsModalOpen(true);
-      setSelectedButton(1);
+
     };
-
-
 
     useEffect(() => {
         const handleResize = () => {
@@ -155,6 +149,13 @@ function MainStickers({ items }) {
                       <div className='modal-placement-el2-box2-stickers-body'>
                         To use these stickers freely you must mention the owner of the design on your social networks or indicate the download URL of the sticker.
                       </div>
+                      <div className='social-button-box'>
+                        <SocialCopyButton link="https://pinterest.com/flaticon/"/>
+                        <SocialCopyButton link="https://www.facebook.com/flaticon/"/>
+                        <SocialCopyButton link="https://x.com/flaticon"/>
+                        <SocialCopyButton link="https://www.flaticon.com/"/>
+                      </div>
+                      
                       
                       
                       <DownloadButton link={SelectedIcon} name={selectedPlugin}/>
