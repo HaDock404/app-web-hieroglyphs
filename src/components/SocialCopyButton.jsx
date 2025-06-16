@@ -2,7 +2,7 @@ import '../styles/main_stickers.css'
 
 import { useState } from 'react';
 
-function SocialCopyButton({link}) {
+function SocialCopyButton({link, logo: Logo}) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -15,7 +15,7 @@ function SocialCopyButton({link}) {
   return (
     <div>
       <button className='social-button-copy' onClick={handleCopy}>
-        
+        <Logo/>
       </button>
       {copied && <div className="copied-message">Copied</div>}
     </div>

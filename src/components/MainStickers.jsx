@@ -5,6 +5,7 @@ import Icon5 from './Icon5';
 import DownloadButton from './DownloadButton'
 import CopyingImgButton from './CopyingImgButton'
 import SocialCopyButton from './SocialCopyButton';
+import {Facebook, Pinterest, X, Link} from './SocialLogo.jsx'
 
 function MainStickers({ items }) {
     const mainRef = useRef(null);
@@ -150,10 +151,10 @@ function MainStickers({ items }) {
                         To use these stickers freely you must mention the owner of the design on your social networks or indicate the download URL of the sticker.
                       </div>
                       <div className='social-button-box'>
-                        <SocialCopyButton link="https://pinterest.com/flaticon/"/>
-                        <SocialCopyButton link="https://www.facebook.com/flaticon/"/>
-                        <SocialCopyButton link="https://x.com/flaticon"/>
-                        <SocialCopyButton link="https://www.flaticon.com/"/>
+                        <SocialCopyButton link="https://pinterest.com/flaticon/" logo={Pinterest}/>
+                        <SocialCopyButton link="https://www.facebook.com/flaticon/" logo={Facebook}/>
+                        <SocialCopyButton link="https://x.com/flaticon" logo={X}/>
+                        <SocialCopyButton link="https://www.flaticon.com/" logo={Link}/>
                       </div>
                       
                       
