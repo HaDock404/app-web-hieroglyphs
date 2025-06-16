@@ -265,3 +265,14 @@
   border-radius: 20px;
   cursor: pointer;
 }
+
+.modal-placement-el2-box2-stickers-title {
+  font-size: 20px;
+  color: white;
+}
+
+.modal-placement-el2-box2-stickers-body {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 10px;
+}

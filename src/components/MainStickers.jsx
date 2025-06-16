@@ -149,7 +149,13 @@ function MainStickers({ items }) {
                       
                     </div>
                     <div className='modal-placement-el2-box2-stickers'>
-                      test
+                      <div className='modal-placement-el2-box2-stickers-title'>
+                        Every time you attribute, you make a designer happy
+                      </div>
+                      <div className='modal-placement-el2-box2-stickers-body'>
+                        To use these stickers freely you must mention the owner of the design on your social networks or indicate the download URL of the sticker.
+                      </div>
+                      
                       
                       <DownloadButton link={SelectedIcon} name={selectedPlugin}/>
                       <CopyingImgButton link={SelectedIcon} name={selectedPlugin}/>
