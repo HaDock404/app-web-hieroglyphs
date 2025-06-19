@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main_stickers.css'
-import video from '../assets/videos/video.mp4'
+import LazyVideo from './LazyVideo'
 
 function MainAnimated({ items }) {
     const mainRef = useRef(null);
@@ -63,7 +63,7 @@ function MainAnimated({ items }) {
                     onClick={() => console.log("ok")}
                   >
                     <div className="box-main-el1-stickers">
-                      <video src={animated_path} autoPlay loop muted playsInline preload="auto" />
+                      <LazyVideo src={animated_path} />
                     </div>
                     <div className="box-main-el2-stickers">{animated_name}</div>
                   </div>
