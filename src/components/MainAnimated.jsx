@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/main_stickers.css'
+import video from '../assets/videos/video.mp4'
 
 function MainAnimated({ items }) {
     const mainRef = useRef(null);
@@ -48,10 +49,10 @@ function MainAnimated({ items }) {
         >
           <section id="container-box-stickers">
             {items.length > 0 ? (
-              items.map(({ id, sticker_name, sticker_path }) => {
-                const imagePath = sticker_path;
+              items.map(({ id, animated_name, animated_path }) => {
+                const imagePath = animated_path;
                 if (!imagePath) {
-                  console.warn(`Composant introuvable pour : ${sticker_path}`);
+                  console.warn(`Composant introuvable pour : ${animated_path}`);
                   return null;
                 }
   
@@ -62,14 +63,9 @@ function MainAnimated({ items }) {
                     onClick={() => console.log("ok")}
                   >
                     <div className="box-main-el1-stickers">
-                      <img
-                      className='img-stickers'
-                        src={imagePath}
-                        alt={sticker_name}
-                        style={{ width: '80px', height: '80px', objectFit: 'contain' }}
-                      />
+                      <video src={animated_path} autoPlay loop muted playsInline preload="auto" />
                     </div>
-                    <div className="box-main-el2-stickers">{sticker_name}</div>
+                    <div className="box-main-el2-stickers">{animated_name}</div>
                   </div>
                 );
               })

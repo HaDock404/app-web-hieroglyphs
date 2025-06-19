@@ -9,3 +9,9 @@ gsutil -m setmeta -h "Content-Disposition: attachment" 'gs://hieroglyphs/**'
 ```bash
 gsutil cors set cors.json gs://hieroglyphs
 ```
+
+## Autorisation pour utiliser les images du bucket
+
+```bash
+gsutil acl ch -r -u AllUsers:R gs://YOUR_BUCKET_NAME
+```

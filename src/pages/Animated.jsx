@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import pluginsData from '../data/sticker-list.json';
+import pluginsData from '../data/animated-list.json';
 
 import Header from "../components/Header"
 import IntroSearch from "../components/IntroSearch"
 import MainAnimated from "../components/MainAnimated"
 
 function Animated() {
-    const sortedPlugins = [...pluginsData].sort((a, b) => a.sticker_name.localeCompare(b.sticker_name));
+    const sortedPlugins = [...pluginsData].sort((a, b) => a.animated_name.localeCompare(b.animated_name));
     const [search, setSearch] = useState('');
     const handleSearchChange = (value) => {
         setSearch(value.toLowerCase());
