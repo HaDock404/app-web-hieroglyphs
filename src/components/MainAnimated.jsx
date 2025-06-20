@@ -82,7 +82,7 @@ function MainAnimated({ items }) {
                     <div className="box-main-el1-stickers">
                       <LazyVideo src={animated_path} />
                     </div>
-                    <div className="box-main-el2-stickers">{animated_name}</div>
+                    <div className="box-main-el2-animated">{animated_name}</div>
                   </div>
                 );
               })
