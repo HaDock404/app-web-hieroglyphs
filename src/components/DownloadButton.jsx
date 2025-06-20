@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 
-function DownloadButton({ link, name }) {
+function DownloadButton({ link, name, type }) {
     const imageUrl = link;
     const [copied, setCopied] = useState(false);
 
@@ -19,7 +19,7 @@ function DownloadButton({ link, name }) {
     };
 
     return (
-        <button onClick={handleDownload} className="modal-placement-button-download-content-stickers">
+        <button onClick={handleDownload} className={`modal-placement-button-download-content-${type}`}>
             {copied ? "Downloaded" : "Download"}
         </button>
     );

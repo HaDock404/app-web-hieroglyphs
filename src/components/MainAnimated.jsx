@@ -155,7 +155,7 @@ function MainAnimated({ items }) {
                       
                       
                       
-                      <DownloadButton link={SelectedIcon} name={selectedPlugin}/>
+                      <DownloadButton link={SelectedIcon} name={selectedPlugin} type="animated"/>
                     </div>
                 </div>
                 <button className='modal-button-stickers' 

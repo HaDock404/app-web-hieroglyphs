@@ -159,7 +159,7 @@ function MainStickers({ items }) {
                       
                       
                       
-                      <DownloadButton link={SelectedIcon} name={selectedPlugin}/>
+                      <DownloadButton link={SelectedIcon} name={selectedPlugin}  type="stickers"/>
                       <CopyingImgButton link={SelectedIcon} name={selectedPlugin}/>
                     </div>
                 </div>
