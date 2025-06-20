@@ -117,7 +117,7 @@ function MainAnimated({ items }) {
                 <div className='modal-placement-el1-stickers'>
                   <div className='modal-placement-el1-box1-stickers'>
                       {SelectedIcon ? (
-                        <div className='img-modal-stickers'>
+                        <div className='video-modal-stickers'>
                           <LazyVideo src={SelectedIcon} />
                         </div>
                       

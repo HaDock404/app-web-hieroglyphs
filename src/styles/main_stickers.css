@@ -191,6 +191,20 @@
   display: block;         
 }
 
+.video-modal-stickers {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-modal-stickers video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;         
+}
+
 .modal-placement-el1-box2-stickers {
 
   font-size: 12px;

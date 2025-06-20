@@ -7,14 +7,28 @@ function LazyVideo({ src }) {
   });
 
   return (
-    <div ref={ref}>
+    <div ref={ref} style={{ width: '100%', height: '100%' }}>
       {inView ? (
-        <video src={src} autoPlay loop muted playsInline preload="auto" />
+        <video
+          src={src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            display: 'block',
+          }}
+        />
       ) : (
         <div style={{ height: '100px', backgroundColor: '#eee' }} />
       )}
     </div>
   );
 }
+
 
 export default LazyVideo
