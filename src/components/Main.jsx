@@ -55,6 +55,7 @@ function Main({ items }) {
        </div>
         <i class="plugin-component1-el3-i5">&lt;Hieroglyphs.${reactText} /&gt;</i>
         `)
+        
       setPluginComponent2(`
         <div class="plugin-component2-el1">
           pod 'Hieroglyphs'
@@ -70,6 +71,7 @@ function Main({ items }) {
           </i>
         </div>
         `)
+
       setPluginComponent3(`
         <div class="plugin-component3-el1">
           npm install @hieroglyphs.io/vue

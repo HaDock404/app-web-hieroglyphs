@@ -236,11 +236,12 @@
   }
 }
 
+
 .plugin-component1-el1 {
   color: #024f29;
   background-color: white;
   font-weight: 400;
-  width: 250px;
+
   height: 18px;
   margin-bottom: 5px;
   padding-left: 3px;
@@ -248,7 +249,7 @@
 
 .plugin-component1-el2 {
   background-color: white;
-  width: 180px;
+
   height: 18px;
   padding-left: 3px;
 }
@@ -275,7 +276,7 @@
 
 .plugin-component1-el3 {
   background-color: white;
-  width: 380px;
+
   color: #024f29;
   margin-bottom: 5px;
   padding-left: 3px;
@@ -310,11 +311,13 @@
   padding-right: 3px;
 }
 
+
+
 .plugin-component2-el1 {
   color: #024f29;
   background-color: white;
   font-weight: 400;
-  width: 250px;
+
   height: 18px;
   margin-bottom: 5px;
   padding-left: 3px;
@@ -322,7 +325,7 @@
 
 .plugin-component2-el2 {
   background-color: white;
-  width: 350px;
+
   height: 18px;
   color:#024f29;
 }
@@ -335,18 +338,19 @@
 }
 
 .plugin-component2-el2-i2 {
-  width: 450px;
+
   background-color: white;
   color: #024f29;
   font-style: normal;
   height: 18px;
 }
 
+
+
 .plugin-component3-el1 {
   color: #024f29;
   background-color: white;
   font-weight: 400;
-  width: 250px;
   height: 18px;
   margin-bottom: 5px;
   padding-left: 3px;
