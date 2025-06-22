@@ -58,19 +58,19 @@
     justify-content: center;
     z-index: 1000;
   }
-  .modal-content {
-    background: white;
-    padding: 0px;
-    border-radius: 8px;
-    background: rgba(0, 0, 0, 0.01); /* Assombrit légèrement */
-    backdrop-filter: blur(10px);
-    border: solid 0.5px #656461;
-    font-family: "Inter", sans-serif;
-    position: fixed;
-    bottom: 10px;
-    width: 70%;
-    height: 200px;
-  }
+.modal-content {
+  background: white;
+  padding: 0px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.01); /* Assombrit légèrement */
+  backdrop-filter: blur(10px);
+  border: solid 0.5px #656461;
+  font-family: "Inter", sans-serif;
+  position: fixed;
+  bottom: 10px;
+  width: 1000px;
+  height: 200px;
+}
 
   .modal-placement {
     width: 100%;
@@ -193,4 +193,188 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1040px) and (min-width: 880px){
+
+  .modal-content {
+    background: white;
+    padding: 0px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.01); /* Assombrit légèrement */
+    backdrop-filter: blur(10px);
+    border: solid 0.5px #656461;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 879px){
+
+  .modal-content {
+    background: white;
+    padding: 0px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.01); /* Assombrit légèrement */
+    backdrop-filter: blur(10px);
+    border: solid 0.5px #656461;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 200px;
+    background-color: red;
+  }
+}
+
+.plugin-component1-el1 {
+  color: #024f29;
+  background-color: white;
+  font-weight: 400;
+  width: 250px;
+  height: 18px;
+  margin-bottom: 5px;
+  padding-left: 3px;
+}
+
+.plugin-component1-el2 {
+  background-color: white;
+  width: 180px;
+  height: 18px;
+  padding-left: 3px;
+}
+
+.plugin-component1-el2-i1 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el2-i2 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el2-i3 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el2-i4 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el3 {
+  background-color: white;
+  width: 380px;
+  color: #024f29;
+  margin-bottom: 5px;
+  padding-left: 3px;
+}
+
+.plugin-component1-el3-i1 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el3-i2 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el3-i3 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el3-i4 {
+  color: #024f29;
+  font-style: normal;
+}
+
+.plugin-component1-el3-i5 {
+  background-color: white;
+  color: #024f29;
+  font-style: normal;
+  height: 18px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.plugin-component2-el1 {
+  color: #024f29;
+  background-color: white;
+  font-weight: 400;
+  width: 250px;
+  height: 18px;
+  margin-bottom: 5px;
+  padding-left: 3px;
+}
+
+.plugin-component2-el2 {
+  background-color: white;
+  width: 350px;
+  height: 18px;
+  color:#024f29;
+}
+
+.plugin-component2-el2-i1 {
+  background-color: white;
+  color: #024f29;
+  font-style: normal;
+  height: 18px;
+}
+
+.plugin-component2-el2-i2 {
+  width: 450px;
+  background-color: white;
+  color: #024f29;
+  font-style: normal;
+  height: 18px;
+}
+
+.plugin-component3-el1 {
+  color: #024f29;
+  background-color: white;
+  font-weight: 400;
+  width: 250px;
+  height: 18px;
+  margin-bottom: 5px;
+  padding-left: 3px;
+}
+
+.plugin-component3-el2 {
+  background-color: white;
+}
+
+.plugin-component3-el2-i1 {
+  background-color: white;
+  color: #024f29;
+  font-style: normal;
+  height: 18px;
+  padding-left: 0px;
+  padding-right: 3px;
+}
+
+.plugin-component3-el3 {
+  background-color: white;
+  margin-top:3px;
+}
+
+.plugin-component3-el3-i1 {
+  background-color: white;
+  color: #024f29;
+  font-style: normal;
+  height: 18px;
+  padding-left: 0px;
+  padding-right: 3px;
 }

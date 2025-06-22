@@ -43,74 +43,48 @@ function Main({ items }) {
 
       const reactText = plugin ? plugin.plugin_component : "No plugin";
       setPluginComponent1(`
-        <div style="
-          color: #024f29;
-          background-color: white;
-          font-weight: 400;
-          width: 250px;
-          height: 18px;
-          margin-bottom: 5px;
-          padding-left: 3px;
-          "
-        >
+        <div class="plugin-component1-el1">
           npm install @hieroglyphs.io/react
         </div>
         
-        <div style="background-color: white; width: 180px; height: 18px; padding-left: 3px;">
-          <i style="color: #024f29; font-style: normal;">import</i> <i style="color: #024f29; font-style: normal;">React</i> <i style="color: #024f29; font-style: normal;">from</i> <i style="color: #024f29; font-style: normal;">'react'</i>;
+        <div class="plugin-component1-el2">
+          <i class="plugin-component1-el2-i1">import</i> <i class="plugin-component1-el2-i2">React</i> <i class="plugin-component1-el2-i3">from</i> <i class="plugin-component1-el2-i4">'react'</i>;
         </div>
-        <div style="background-color: white; width: 380px; color: #024f29; margin-bottom: 5px; padding-left: 3px;">
-          <i style="color: #024f29; font-style: normal;">import</i> * <i style="color: #024f29; font-style: normal;">as</i> Hieroglyphs <i style="color: #024f29; font-style: normal;">from</i> <i style="color: #024f29; font-style: normal;">'@hieroglyphs.io/react'</i>;
+        <div class="plugin-component1-el3">
+          <i class="plugin-component1-el3-i1">import</i> * <i class="plugin-component1-el3-i2">as</i> Hieroglyphs <i class="plugin-component1-el3-i3">from</i> <i class="plugin-component1-el3-i4">'@hieroglyphs.io/react'</i>;
        </div>
-        <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 3px; padding-right: 3px;">&lt;Hieroglyphs.${reactText} /&gt;</i>
+        <i class="plugin-component1-el3-i5">&lt;Hieroglyphs.${reactText} /&gt;</i>
         `)
       setPluginComponent2(`
-        <div style="
-          color: #024f29;
-          background-color: white;
-          font-weight: 400;
-          width: 250px;
-          height: 18px;
-          margin-bottom: 5px;
-          padding-left: 3px;
-          "
-        >
+        <div class="plugin-component2-el1">
           pod 'Hieroglyphs'
         </div>
         
-        <div style="background-color: white; width: 350px; height: 18px; color:#024f29;>
-          <i style="background-color: white; color: #024f29; font-style: normal; height: 18px;">
+        <div class="plugin-component2-el2">
+          <i class="plugin-component2-el2-i1">
             import Hieroglyphs
           </i>
           </br></br>
-          <i style="width: 450px; background-color: white; color: #024f29; font-style: normal; height: 18px;">
+          <i class="plugin-component2-el2-i2">
             let icon = Hieroglyphs.${reactText}()
           </i>
         </div>
         `)
       setPluginComponent3(`
-        <div style="
-          color: #024f29;
-          background-color: white;
-          font-weight: 400;
-          width: 250px;
-          height: 18px;
-          margin-bottom: 5px;
-          padding-left: 3px;
-          "
-        >
+        <div class="plugin-component3-el1">
           npm install @hieroglyphs.io/vue
         </div>
         
-        <div style="background-color: white; width: 500px;">
-          <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 0px; padding-right: 3px;">
+        <div class="plugin-component3-el2">
+          <i class="plugin-component3-el2-i1">
           &lt;script setup&gt; <br/>
           import { ${reactText} } from '@hieroglyphs.io/vue'; <br/>
           &lt;/script setup&gt;
           </i>
         </div>
-        <div style="background-color: white; width: 500px; margin-top:3px;">
-        <i style="background-color: white; color: #024f29; font-style: normal; height: 18px; padding-left: 0px; padding-right: 3px;">
+
+        <div class="plugin-component3-el3">
+        <i class="plugin-component3-el3-i1">
         &lt;template&gt; <br/>
         &lt;${reactText}&gt; <br/>
         &lt;/template&gt;
