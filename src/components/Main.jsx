@@ -53,9 +53,11 @@ function Main({ items }) {
         <div class="plugin-component1-el3">
           <i class="plugin-component1-el3-i1">import</i> * <i class="plugin-component1-el3-i2">as</i> Hieroglyphs <i class="plugin-component1-el3-i3">from</i> <i class="plugin-component1-el3-i4">'@hieroglyphs.io/react'</i>;
        </div>
-        <i class="plugin-component1-el3-i5">&lt;Hieroglyphs.${reactText} /&gt;</i>
+       <div class="plugin-component2-el3-i5-wrapper">
+        <i class="plugin-component1-el3-i5">&lt;Hieroglyphs.<span class="react-text" title="${reactText}">${reactText}</span> /&gt;</i>
+        </div>
         `)
-        
+
       setPluginComponent2(`
         <div class="plugin-component2-el1">
           pod 'Hieroglyphs'
@@ -65,30 +67,31 @@ function Main({ items }) {
           <i class="plugin-component2-el2-i1">
             import Hieroglyphs
           </i>
-          </br></br>
-          <i class="plugin-component2-el2-i2">
-            let icon = Hieroglyphs.${reactText}()
-          </i>
+          <br><br>
+          <div class="plugin-component2-el3-i5-wrapper">
+            let icon = Hieroglyphs.<span class="react-text" title="${reactText}">${reactText}()</span>
+          </div>
         </div>
-        `)
+      `)
+
 
       setPluginComponent3(`
         <div class="plugin-component3-el1">
           npm install @hieroglyphs.io/vue
         </div>
         
-        <div class="plugin-component3-el2">
+        <div class="plugin-component2-el3-i5-wrapper">
           <i class="plugin-component3-el2-i1">
           &lt;script setup&gt; <br/>
-          import { ${reactText} } from '@hieroglyphs.io/vue'; <br/>
+          import { <span class="react-text" title="${reactText}">${reactText}</span> } from '@hieroglyphs.io/vue'; <br/>
           &lt;/script setup&gt;
           </i>
         </div>
 
-        <div class="plugin-component3-el3">
+        <div class="plugin-component2-el3-i5-wrapper">
         <i class="plugin-component3-el3-i1">
         &lt;template&gt; <br/>
-        &lt;${reactText}&gt; <br/>
+        &lt;<span class="react-text" title="${reactText}">${reactText}</span>&gt; <br/>
         &lt;/template&gt;
         </i>
       </div>
